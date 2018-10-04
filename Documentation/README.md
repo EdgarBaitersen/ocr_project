@@ -6,4 +6,5 @@ Mettez ici les liens de docs sur l'OCR.
   <li>wiki: https://fr.wikipedia.org/wiki/Reconnaissance_optique_de_caract%C3%A8res</li>
   <li>developpez.net: https://www.developpez.net/forums/d20716/general-developpement/algorithme-mathematiques/traitement-d-images/faire-ocr/</li>
   <li>Un OCR d'un ancien spe: https://github.com/tomMoulard/OCR_spe</li>
+  <li>Installation SDL: https://loka.developpez.com/tutoriel/sdl/installation/linux/</li>
 </ul>
