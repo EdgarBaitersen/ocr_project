@@ -1,0 +1,1375 @@
+
+<!DOCTYPE html>
+<html class="no-js " lang="fr" prefix="og: http://ogp.me/ns#">
+<head>
+<title>
+                            Premier pas dans l&#039;IA avec l&#039;OCR - OpenClassrooms
+                    </title>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta charset="utf-8" /><script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,t,n){function r(n){if(!t[n]){var o=t[n]={exports:{}};e[n][0].call(o.exports,function(t){var o=e[n][1][t];return r(o||t)},o,o.exports)}return t[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({1:[function(e,t,n){function r(){}function o(e,t,n){return function(){return i(e,[f.now()].concat(u(arguments)),t?null:this,n),t?void 0:this}}var i=e("handle"),a=e(2),u=e(3),c=e("ee").get("tracer"),f=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],d="api-",l=d+"ixn-";a(p,function(e,t){s[t]=o(d+t,!0,"api")}),s.addPageAction=o(d+"addPageAction",!0),s.setCurrentRouteName=o(d+"routeName",!0),t.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,t){var n={},r=this,o="function"==typeof t;return i(l+"tracer",[f.now(),e,n],r),function(){if(c.emit((o?"":"no-")+"fn-start",[f.now(),r,o],n),o)try{return t.apply(this,arguments)}catch(e){throw c.emit("fn-err",[arguments,this,e],n),e}finally{c.emit("fn-end",[f.now()],n)}}}};a("setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,t){m[t]=o(l+t)}),newrelic.noticeError=function(e){"string"==typeof e&&(e=new Error(e)),i("err",[e,f.now()])}},{}],2:[function(e,t,n){function r(e,t){var n=[],r="",i=0;for(r in e)o.call(e,r)&&(n[i]=t(r,e[r]),i+=1);return n}var o=Object.prototype.hasOwnProperty;t.exports=r},{}],3:[function(e,t,n){function r(e,t,n){t||(t=0),"undefined"==typeof n&&(n=e?e.length:0);for(var r=-1,o=n-t||0,i=Array(o<0?0:o);++r<o;)i[r]=e[t+r];return i}t.exports=r},{}],4:[function(e,t,n){t.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,t,n){function r(){}function o(e){function t(e){return e&&e instanceof r?e:e?c(e,u,i):i()}function n(n,r,o,i){if(!d.aborted||i){e&&e(n,r,o);for(var a=t(o),u=m(n),c=u.length,f=0;f<c;f++)u[f].apply(a,r);var p=s[y[n]];return p&&p.push([b,n,r,a]),a}}function l(e,t){v[e]=m(e).concat(t)}function m(e){return v[e]||[]}function w(e){return p[e]=p[e]||o(n)}function g(e,t){f(e,function(e,n){t=t||"feature",y[n]=t,t in s||(s[t]=[])})}var v={},y={},b={on:l,emit:n,get:w,listeners:m,context:t,buffer:g,abort:a,aborted:!1};return b}function i(){return new r}function a(){(s.api||s.feature)&&(d.aborted=!0,s=d.backlog={})}var u="nr@context",c=e("gos"),f=e(2),s={},p={},d=t.exports=o();d.backlog=s},{}],gos:[function(e,t,n){function r(e,t,n){if(o.call(e,t))return e[t];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,t,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return e[t]=r,r}var o=Object.prototype.hasOwnProperty;t.exports=r},{}],handle:[function(e,t,n){function r(e,t,n,r){o.buffer([e],r),o.emit(e,t,n)}var o=e("ee").get("handle");t.exports=r,r.ee=o},{}],id:[function(e,t,n){function r(e){var t=typeof e;return!e||"object"!==t&&"function"!==t?-1:e===window?0:a(e,i,function(){return o++})}var o=1,i="nr@id",a=e("gos");t.exports=r},{}],loader:[function(e,t,n){function r(){if(!x++){var e=h.info=NREUM.info,t=d.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&t))return s.abort();f(y,function(t,n){e[t]||(e[t]=n)}),c("mark",["onload",a()+h.offset],null,"api");var n=d.createElement("script");n.src="https://"+e.agent,t.parentNode.insertBefore(n,t)}}function o(){"complete"===d.readyState&&i()}function i(){c("mark",["domContent",a()+h.offset],null,"api")}function a(){return E.exists&&performance.now?Math.round(performance.now()):(u=Math.max((new Date).getTime(),u))-h.offset}var u=(new Date).getTime(),c=e("handle"),f=e(2),s=e("ee"),p=window,d=p.document,l="addEventListener",m="attachEvent",w=p.XMLHttpRequest,g=w&&w.prototype;NREUM.o={ST:setTimeout,SI:p.setImmediate,CT:clearTimeout,XHR:w,REQ:p.Request,EV:p.Event,PR:p.Promise,MO:p.MutationObserver};var v=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1071.min.js"},b=w&&g&&g[l]&&!/CriOS/.test(navigator.userAgent),h=t.exports={offset:u,now:a,origin:v,features:{},xhrWrappable:b};e(1),d[l]?(d[l]("DOMContentLoaded",i,!1),p[l]("load",r,!1)):(d[m]("onreadystatechange",o),p[m]("onload",r)),c("mark",["firstbyte",u],null,"api");var x=0,E=e(4)},{}]},{},["loader"]);</script>
+<meta name="application-name" content="OpenClassrooms" />
+<meta name="msapplication-TileColor" content="#e95325" />
+<meta name="msapplication-TileImage" content="/fav-icon.png?v=3" />
+<meta name="theme-color" content="#E95325">
+<link rel="icon" sizes="144x144" href="/fav-icon.png?v=2">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png?v=2" />
+<link rel="apple-touch-icon" href="/apple-touch-icon-iphone.png?v=2" />
+<link rel="apple-touch-icon" sizes="72x72" href="/apple-touch-icon-ipad.png?v=2" />
+<link rel="apple-touch-icon" sizes="114x114" href="/apple-touch-icon-iphone-retina-display.png?v=2" />
+<link rel="apple-touch-icon" sizes="144x144" href="/apple-touch-icon-ipad-retina-display.png?v=2" />
+<link rel="apple-touch-icon-precomposed" href="/apple-touch-icon-precomposed.png?v=2" />
+<link rel="shortcut icon" href="/favicon.ico?e96d4ba" />
+<link href="/bundles/common/css/master-7fbb67ea.css" type="text/css" rel="stylesheet" media="all" />
+<link href="/bundles/course/css/main-b73e0b15.css" type="text/css" rel="stylesheet" media="all" />
+<link href="https://vjs.zencdn.net/6.2.5/video-js.css" rel="stylesheet">
+<script>
+    /*! modernizr 3.3.1 (Custom Build) | MIT *
+    * https://modernizr.com/download/?-cssfilters-touchevents-setclasses !*/
+    !function(e,n,t){function o(e,n){return typeof e===n}function r(){var e,n,t,r,s,i,a;for(var l in C)if(C.hasOwnProperty(l)){if(e=[],n=C[l],n.name&&(e.push(n.name.toLowerCase()),n.options&&n.options.aliases&&n.options.aliases.length))for(t=0;t<n.options.aliases.length;t++)e.push(n.options.aliases[t].toLowerCase());for(r=o(n.fn,"function")?n.fn():n.fn,s=0;s<e.length;s++)i=e[s],a=i.split("."),1===a.length?Modernizr[a[0]]=r:(!Modernizr[a[0]]||Modernizr[a[0]]instanceof Boolean||(Modernizr[a[0]]=new Boolean(Modernizr[a[0]])),Modernizr[a[0]][a[1]]=r),g.push((r?"":"no-")+a.join("-"))}}function s(e){var n=w.className,t=Modernizr._config.classPrefix||"";if(x&&(n=n.baseVal),Modernizr._config.enableJSClass){var o=new RegExp("(^|\\s)"+t+"no-js(\\s|$)");n=n.replace(o,"$1"+t+"js$2")}Modernizr._config.enableClasses&&(n+=" "+t+e.join(" "+t),x?w.className.baseVal=n:w.className=n)}function i(){return"function"!=typeof n.createElement?n.createElement(arguments[0]):x?n.createElementNS.call(n,"http://www.w3.org/2000/svg",arguments[0]):n.createElement.apply(n,arguments)}function a(){var e=n.body;return e||(e=i(x?"svg":"body"),e.fake=!0),e}function l(e,t,o,r){var s,l,u,f,p="modernizr",c=i("div"),d=a();if(parseInt(o,10))for(;o--;)u=i("div"),u.id=r?r[o]:p+(o+1),c.appendChild(u);return s=i("style"),s.type="text/css",s.id="s"+p,(d.fake?d:c).appendChild(s),d.appendChild(c),s.styleSheet?s.styleSheet.cssText=e:s.appendChild(n.createTextNode(e)),c.id=p,d.fake&&(d.style.background="",d.style.overflow="hidden",f=w.style.overflow,w.style.overflow="hidden",w.appendChild(d)),l=t(c,e),d.fake?(d.parentNode.removeChild(d),w.style.overflow=f,w.offsetHeight):c.parentNode.removeChild(c),!!l}function u(e,n){return!!~(""+e).indexOf(n)}function f(e){return e.replace(/([a-z])-([a-z])/g,function(e,n,t){return n+t.toUpperCase()}).replace(/^-/,"")}function p(e,n){return function(){return e.apply(n,arguments)}}function c(e,n,t){var r;for(var s in e)if(e[s]in n)return t===!1?e[s]:(r=n[e[s]],o(r,"function")?p(r,t||n):r);return!1}function d(e){return e.replace(/([A-Z])/g,function(e,n){return"-"+n.toLowerCase()}).replace(/^ms-/,"-ms-")}function m(n,o){var r=n.length;if("CSS"in e&&"supports"in e.CSS){for(;r--;)if(e.CSS.supports(d(n[r]),o))return!0;return!1}if("CSSSupportsRule"in e){for(var s=[];r--;)s.push("("+d(n[r])+":"+o+")");return s=s.join(" or "),l("@supports ("+s+") { #modernizr { position: absolute; } }",function(e){return"absolute"==getComputedStyle(e,null).position})}return t}function h(e,n,r,s){function a(){p&&(delete k.style,delete k.modElem)}if(s=o(s,"undefined")?!1:s,!o(r,"undefined")){var l=m(e,r);if(!o(l,"undefined"))return l}for(var p,c,d,h,v,y=["modernizr","tspan","samp"];!k.style&&y.length;)p=!0,k.modElem=i(y.shift()),k.style=k.modElem.style;for(d=e.length,c=0;d>c;c++)if(h=e[c],v=k.style[h],u(h,"-")&&(h=f(h)),k.style[h]!==t){if(s||o(r,"undefined"))return a(),"pfx"==n?h:!0;try{k.style[h]=r}catch(g){}if(k.style[h]!=v)return a(),"pfx"==n?h:!0}return a(),!1}function v(e,n,t,r,s){var i=e.charAt(0).toUpperCase()+e.slice(1),a=(e+" "+j.join(i+" ")+i).split(" ");return o(n,"string")||o(n,"undefined")?h(a,n,r,s):(a=(e+" "+E.join(i+" ")+i).split(" "),c(a,n,t))}function y(e,n,o){return v(e,t,t,n,o)}var g=[],C=[],S={_version:"3.3.1",_config:{classPrefix:"",enableClasses:!0,enableJSClass:!0,usePrefixes:!0},_q:[],on:function(e,n){var t=this;setTimeout(function(){n(t[e])},0)},addTest:function(e,n,t){C.push({name:e,fn:n,options:t})},addAsyncTest:function(e){C.push({name:null,fn:e})}},Modernizr=function(){};Modernizr.prototype=S,Modernizr=new Modernizr;var w=n.documentElement,x="svg"===w.nodeName.toLowerCase(),_=S._config.usePrefixes?" -webkit- -moz- -o- -ms- ".split(" "):["",""];S._prefixes=_;var b="CSS"in e&&"supports"in e.CSS,T="supportsCSS"in e;Modernizr.addTest("supports",b||T);var z=S.testStyles=l;Modernizr.addTest("touchevents",function(){var t;if("ontouchstart"in e||e.DocumentTouch&&n instanceof DocumentTouch)t=!0;else{var o=["@media (",_.join("touch-enabled),("),"heartz",")","{#modernizr{top:9px;position:absolute}}"].join("");z(o,function(e){t=9===e.offsetTop})}return t});var P="Moz O ms Webkit",j=S._config.usePrefixes?P.split(" "):[];S._cssomPrefixes=j;var E=S._config.usePrefixes?P.toLowerCase().split(" "):[];S._domPrefixes=E;var N={elem:i("modernizr")};Modernizr._q.push(function(){delete N.elem});var k={style:N.elem.style};Modernizr._q.unshift(function(){delete k.style}),S.testAllProps=v,S.testAllProps=y,Modernizr.addTest("cssfilters",function(){if(Modernizr.supports)return y("filter","blur(2px)");var e=i("a");return e.style.cssText=_.join("filter:blur(2px); "),!!e.style.length&&(n.documentMode===t||n.documentMode>9)}),r(),s(g),delete S.addTest,delete S.addAsyncTest;for(var A=0;A<Modernizr._q.length;A++)Modernizr._q[A]();e.Modernizr=Modernizr}(window,document);
+    </script>
+<script type="text/javascript">
+    var App = {
+        startTime: (new Date()).getTime(),
+        pageGenerationDate: 1538643610000
+    };
+
+    App.user = {
+                    locale: 'fr',
+            language: 'fr',
+            isPremium: 'false',
+            anonymous: 'true'
+            };
+
+    App.preferences = {
+        debug: false,
+        assetVersion: 'e96d4ba',
+        contactMail: 'hello\u0040openclassrooms.com',
+        contactPhone: '\u002B33\u00201\u002080\u002088\u002080\u002030',
+        phoneNumbersByCountry: {"uk":{"contact":"+44 16 1768 1880"},"ca":{"contact":"+1 929-376-0101"},"us":{"contact":"+1 929-376-0101"},"fr":{"contact":"+33 1 80 88 80 30","b2b_contact":"+33 1 80 88 80 40"},"es":{"contact":"+33 1 80 88 80 30"}},
+        adyenPublicKey: '10001\u007C889EBFD4D434B82683E21DCA26E77C3E20E0EE09A5ECE3830B0ED51F2FA721A2F7E9EC871C6AB9A1E12C4492F4717673047757E02C5256D8E265CD51E413E5EFCCFEAC41B39C662A424ADC13EE187C38C372A7FCCEC1EA5DF841989437D78B252A8EB51008E60BB55B1E55A7A80DE1A9D60D998C128A576BFAE1DDB97D514AF0A073AEDDE84CEE40D1F8F6ECE85D0FFA50C95C06DB274021C1371376C6EB16561FD65C5E2704B570A7504D617D0F3820F176A0609F6162BDF5890533289FDC3DA7DB03B50BB3BD60A613E1FF72060F22987627E8F1A29F0128A94EC4C8FF7CF6B7AB9558D8433BF86D7A388AB927641CD6C02689139CEE3AAC9ACBFFE83806CB',
+        cdnImage: true,
+        layer: {
+            appId: 'layer\u003A\/\/\/apps\/staging\/7757c53a\u002Db2ba\u002D11e5\u002Db2a6\u002D2584730b1501',
+            identityProviderUrl: '\/ajax\/conversations\/get\u002Didentity\u002Dtoken'
+        },
+        algolia: {
+            appId: 'JGRXRFVQM0',
+            apiKey: 'dfbdea500cb0b5f46e449ad334916c44',
+            indexName: 'prod_v2_COURSES_fr'
+        },
+        routes: {
+            COURSE_EVENT: '/components/courses/:courseId',
+            COURSE_PART_EVENT: '/components/courses/:courseId/parts/:partId',
+
+            ACCEPT_COOKIE: '\/fr\/components\/user\u002Daccept\u002Dconsent\u002Dcookie'
+        },
+
+                    };
+
+    App.preferences.navigationPreference = {
+            };
+
+    App.preferences.modules = {
+        'smiley': {
+            basePath: '/bundles/common/images/smiley/'
+        }
+    };
+
+    try {
+        App.api = JSON.parse("\u007B\u0022anonymous\u0022\u003A\u007B\u0022client_id\u0022\u003A\u0022807605274673228623802113\u0022,\u0022client_secret\u0022\u003A\u00221\u0022\u007D,\u0022logged\u0022\u003A\u007B\u0022client_id\u0022\u003A\u00227xPFDY3bB3ruX44z\u0022\u007D,\u0022urls\u0022\u003A\u007B\u0022authorize\u0022\u003A\u0022https\u003A\\\/\\\/openclassrooms.com\\\/oauth2\\\/authorize\u0022,\u0022root\u0022\u003A\u0022https\u003A\\\/\\\/api.openclassrooms.com\u0022\u007D\u007D");
+    } catch (e) {
+        App.api = {};
+    }
+
+    App.notifications = {};
+    App.scripts = [];
+</script>
+<script>    
+    App.data = App.data || {};
+App.data.currentCourse = {"courseId":2301881,"courseTitle":"Premier pas dans l'IA avec l'OCR","courseSlug":"premier-pas-dans-l-ia-avec-l-ocr","courseLanguage":"fr","isIntroduction":true,"isCertifying":false};
+App.preferences.modules['view/currentCoursePage'] = App.data.currentCourse;
+</script>
+<script type="application/ld+json">
+        {"@context":"http:\/\/schema.org","@type":"Course","name":"Premier pas dans l'IA avec l'OCR","description":"Posez un premier pas dans l'intelligence artificielle (IA) en cr\u00e9ant une reconnaissance de caract\u00e8res simple.","provider":{"@type":"Organization","name":"OpenClassrooms","sameAs":"https:\/\/openclassrooms.com\/fr\/"}}
+        </script>
+<meta property="og:locale" content="fr" />
+<meta property="og:type" content="website" />
+<meta property="og:title" content="Premier pas dans l&#039;IA avec l&#039;OCR" />
+<meta property="og:url" content="https://openclassrooms.com/fr/courses/2301881-premier-pas-dans-lia-avec-locr" />
+<meta property="og:site_name" content="OpenClassrooms" />
+<meta property="og:image" content="https://static.oc-static.com/prod/courses/illustrations/illu_premier-pas-dans-l-ia-avec-l-ocr.png" />
+<meta property="og:description" content="Posez un premier pas dans l&#039;intelligence artificielle (IA) en créant une reconnaissance de caractères simple." />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@OCFrance" />
+<meta name="twitter:title" content="Premier pas dans l&#039;IA avec l&#039;OCR" />
+<meta name="twitter:image" content="https://static.oc-static.com/prod/courses/illustrations/illu_premier-pas-dans-l-ia-avec-l-ocr.png" />
+<meta name="twitter:description" content="Posez un premier pas dans l&#039;intelligence artificielle (IA) en créant une reconnaissance de caractères simple." />
+<link rel="canonical" href="https://openclassrooms.com/fr/courses/2301881-premier-pas-dans-lia-avec-locr" />
+</head>
+<body class="course oc-body  courses">
+<ul class="skipLink">
+<li>
+<a class="skipLink__item" href="#mainContent">Aller au contenu</a>
+</li>
+<li>
+<a class="skipLink__item" href="#footerChangeLanguage">Choisir la langue</a>
+</li>
+<li>
+<a class="skipLink__item" href="#algolia-search-input">Aller à la recherche</a>
+</li>
+</ul>
+<div id="react_root"></div>
+<script id="_EVENTS-PAGE" type="application/json">
+        {
+            "type": "page",
+            "integrations": {
+                "HubSpot": false
+            }
+        }
+    </script>
+<header role="banner" id="oc-header" class="js-tabs-mobile mainHeader  
+        ">
+<!--[if lt IE 10]>
+<div class="disclaimer  disclaimer-error">
+    Vous utilisez un navigateur obsolète, veuillez le <a href="https://browser-update.org/update.html">mettre à jour</a>.
+</div>
+<![endif]-->
+
+<div id="ie-ten-disclaimer" class="disclaimer disclaimer-error" style="display:none">
+Vous utilisez un navigateur obsolète, veuillez le <a href="https://browser-update.org/update.html">mettre à jour</a>.
+</div>
+<script>
+    if (document.documentMode === 10) {
+        document.getElementById('ie-ten-disclaimer').style.display = 'block';
+    }
+</script>
+
+<noscript>
+    <div class="disclaimer  disclaimer--error">
+        Veuillez utiliser un <a href="https://browser-update.org/update.html">navigateur internet moderne</a> avec JavaScript activé pour naviguer sur OpenClassrooms.com
+    </div>
+</noscript>
+<template class="hidden" id="cookies-banner-content">En naviguant sur OpenClassrooms, vous acceptez notre <a href="/fr/privacy-policy#personal-data-gathering">politique de cookies</a>.</template>
+<template class="hidden" id="cookies-banner-label">Accepter</template>
+<div class="grid-wrapper">
+<div class="grid-inner">
+<div class="mainHeader__wrapper">
+<div class="mainHeader__inner">
+<div class="mainHeader__logoWrapper">
+<a href="/fr/" class="mainHeader__logo">
+<span class="a11y">OpenClassrooms.com</span>
+</a>
+</div>
+<div class="mainHeader__content">
+<div id="tab-main" class="mainHeader__tabs">
+<div class="mainHeader__container mainHeader__container--mainMenu">
+<nav id="main-menu-navigation" role="navigation" aria-label="Menu principal" class="mainHeader__mainMenu">
+<ul class="mainTopNav">
+<li class="mainTopNav__itemContainer">
+<a class="mainTopNav__item mainTopNav--pathsIsActive" href="/fr/paths">Parcours</a>
+</li>
+<li class="mainTopNav__itemContainer">
+<a class="mainTopNav__item mainTopNav--coursesIsActive" href="/fr/courses">Cours</a>
+</li>
+<li class="mainTopNav__itemContainer">
+<a class="mainTopNav__item mainTopNav--forumIsActive" href="/forum/">Forums</a>
+</li>
+<li class="mainTopNav__itemContainer">
+<a class="mainTopNav__item mainTopNav--premiumIsActive" href="/fr/premium">Premium</a>
+</li>
+<li class="mainTopNav__itemContainer">
+<a class="mainTopNav__item mainTopNav__itemForBusiness" lang="en" href="/fr/for-business">For Business</a>
+</li>
+</ul>
+</nav>
+</div>
+<div class="mainHeader__container  mainHeader__container--search">
+<div id="tab-search" class="mainHeader__search  js-header-searchContainer">
+<div role="search" class="js-courseSearch  topSearchBox">
+<form class="js-courseSearch-form  oc-form" action="/fr/courses" method="get">
+<div class="js-courseSearch-inputGroup oc-form__widget  inputGroup topSearchBox__inner u--block">
+<i class="topSearchBox__icon icon-magnifying-glass  js-courseSearch-icon"></i>
+<input id="algolia-search-input" role="searchbox" type="search" class="js-courseSearch-input oc-form__control inputGroup__input topSearchBox__input" title="Rechercher" autocomplete="off" data-option_source="/components/courses/search?q=<%= term %>" placeholder="Rechercher" aria-label="Rechercher" name="q" />
+</div>
+</form>
+</div>
+</div>
+</div>
+<div class="mainHeader__container  mainHeader__container--login">
+<a href="/fr/register" class="mainHeader__actionButton  button button--primary js-popin-activator" data-popin-selector="#popin-sign-in" role="button">
+S&#039;inscrire
+</a>
+<a href="/fr/login" class="mainHeader__actionButton  button button--secondary js-popin-activator" data-popin-selector="#popin-log-in" role="button">
+Se connecter
+</a>
+</div>
+<div tabindex="-1" role="dialog" aria-hidden="true" aria-labelledby="popin-sign-in_popin_title" class="popin popin--small  js-popin" id="popin-sign-in">
+<button class="popin__close-button  js-close-button" title="Fermer" aria-label="Fermer">
+<i class="icon-close" aria-hidden="true"></i>
+</button>
+<div class="popin__inner">
+<div class="popin__mainContainer">
+<h3 id="popin-sign-in_popin_title" class="popin__title  js-popin-title">Inscription</h3>
+<div class="popin__content  js-popin-content">
+<div class="popin__contentWrapper">
+ <div class="formLogin formLogin--smallSize">
+<ul class="table table--fullwidth u--noMargin">
+<li class="formLogin__column">
+<a class="button button--facebook  button--fullwidth formLogin__facebook" href="https://www.facebook.com/v2.8/dialog/oauth?client_id=277769842283905&amp;state=740d7d93746ff7336451bfc688389f71&amp;response_type=code&amp;sdk=php-sdk-5.6.3&amp;redirect_uri=https%3A%2F%2Fopenclassrooms.com%2Flogin_check_facebook&amp;scope=public_profile%2Cemail%2Cuser_birthday">
+<i aria-hidden="true" class="icon-facebook"></i>S&#039;inscrire avec Facebook
+</a>
+<a class="button button--google  button--fullwidth formLogin__google" href="https://accounts.google.com/o/oauth2/auth?response_type=code&amp;access_type=online&amp;client_id=132418960718-jdnmpug3g9e6ub2p41ergcci1492qh82.apps.googleusercontent.com&amp;redirect_uri=https%3A%2F%2Fopenclassrooms.com%2Flogin_check_google&amp;state&amp;scope=https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email%20https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile&amp;approval_prompt=auto">
+<i aria-hidden="true" class="icon-google"></i>S&#039;inscrire avec Google
+</a>
+</li>
+<li class="formLogin__column">
+<form name="register" method="post" action="/fr/register" class="js-registerForm oc-form">
+<div class="accessibility-hidden">
+<label class="oc-form__row    "><span class="oc-form__label-text ">
+Wonder&nbsp;
+<abbr class="oc-form__required js-form-required wonder oc-form__required-hidden" title="requis"><span>*</span></abbr></span><span class="oc-form__widget formWidget "><input type="text" id="register_wonder" name="register[wonder]" tabindex="-1" class=" textInput textInput--text" /></span></label>
+</div>
+<div class="oc-form__group oc-form--requiredHidden">
+<label class="oc-form__row    "><span class="oc-form__label-text ">
+Prénom&nbsp;
+<abbr class="oc-form__required js-form-required firstName " title="requis"><span>*</span></abbr></span><span class="oc-form__widget formWidget "><input type="text" id="register_firstName" name="register[firstName]" required="required" maxlength="100" autofocus="autofocus" class=" textInput textInput--text" /></span></label>
+</div>
+<div class="oc-form__group oc-form--requiredHidden">
+<label class="oc-form__row    "><span class="oc-form__label-text ">
+Nom&nbsp;
+<abbr class="oc-form__required js-form-required lastName " title="requis"><span>*</span></abbr></span><span class="oc-form__widget formWidget "><input type="text" id="register_lastName" name="register[lastName]" required="required" maxlength="100" class=" textInput textInput--text" /></span></label>
+</div>
+<div class="oc-form__group oc-form--requiredHidden">
+<label class="oc-form__row    "><span class="oc-form__label-text ">
+Adresse email&nbsp;
+<abbr class="oc-form__required js-form-required email " title="requis"><span>*</span></abbr></span><span class="oc-form__widget formWidget "><input type="email" id="register_email" name="register[email]" required="required" maxlength="80" data-check-email="1" class=" textInput textInput--email" /></span></label>
+<p>
+<em class="formLogin__infoLabel">
+Vous recevrez votre mot de passe sur cette adresse email.
+</em>
+</p>
+</div>
+<div class="oc-form__group oc-form--requiredHidden">
+<label class="oc-form__row  oc-form__row--reversed  "><span class="oc-form__widget"><span class="ocCheckbox"><input type="checkbox" id="register_terms" name="register[terms]" required="required" class="" value="1" /><span class="ocCheckbox__check"></span></span></span><span class="oc-form__label-text"><span class="oc-form__label-text ">
+J'ai lu et j'accepte les <a target="_blank" href="/fr/terms-conditions">Conditions Générales d'Utilisation</a> et la <a href="/fr/privacy-policy" target="_blank">Politique de Protection des Données Personnelles</a>.&nbsp;
+<abbr class="oc-form__required js-form-required terms " title="requis"><span>*</span></abbr></span></span></label>
+</div>
+<div class="oc-form__group  center-text">
+<button type="submit" id="register_create" name="register[create]" class="button button--primary button"> S'inscrire</button>
+</div>
+<input type="hidden" id="register__target_path" name="register[_target_path]" class=" textInput textInput--hidden" value="https://openclassrooms.com/fr/courses/2301881-premier-pas-dans-lia-avec-locr" /><input type="hidden" id="register__token" name="register[_token]" class=" textInput textInput--hidden" value="zAs2u6EPPNxYDMYrwpGczlJH7o7WkZ9TrxJ59oAmvEU" /></form>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div tabindex="-1" role="dialog" aria-hidden="true" aria-labelledby="popin-log-in_popin_title" class="popin popin--small  js-popin" id="popin-log-in">
+<button class="popin__close-button  js-close-button" title="Fermer" aria-label="Fermer">
+<i class="icon-close" aria-hidden="true"></i>
+</button>
+<div class="popin__inner">
+<div class="popin__mainContainer">
+<h3 id="popin-log-in_popin_title" class="popin__title  js-popin-title">Connexion</h3>
+<div class="popin__content  js-popin-content">
+<div class="popin__contentWrapper">
+<div class="formLogin formLogin--smallSize">
+<ul class="table table--fullwidth u--noMargin">
+<li class="formLogin__column">
+<a class="button button--facebook button--fullwidth formLogin__facebook" href="https://www.facebook.com/v2.8/dialog/oauth?client_id=277769842283905&amp;state=740d7d93746ff7336451bfc688389f71&amp;response_type=code&amp;sdk=php-sdk-5.6.3&amp;redirect_uri=https%3A%2F%2Fopenclassrooms.com%2Flogin_check_facebook&amp;scope=public_profile%2Cemail%2Cuser_birthday"><i aria-hidden="true" class="icon-facebook"></i> Se connecter avec Facebook</a>
+<a class="button button--google button--fullwidth formLogin__google" href="https://accounts.google.com/o/oauth2/auth?response_type=code&amp;access_type=online&amp;client_id=132418960718-jdnmpug3g9e6ub2p41ergcci1492qh82.apps.googleusercontent.com&amp;redirect_uri=https%3A%2F%2Fopenclassrooms.com%2Flogin_check_google&amp;state&amp;scope=https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email%20https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile&amp;approval_prompt=auto"><i aria-hidden="true" class="icon-google"></i> Se connecter avec Google</a>
+</li>
+<li class="formLogin__column">
+<form name="" method="post" action="/login_check" class=" oc-form">
+<div class="oc-form__group oc-form--requiredHidden">
+<label class="oc-form__row    "><span class="oc-form__label-text ">
+Adresse email ou nom d'utilisateur&nbsp;
+<abbr class="oc-form__required js-form-required _username " title="requis"><span>*</span></abbr></span><span class="oc-form__widget formWidget "><input type="text" id="_username" name="_username" required="required" autofocus="autofocus" class=" textInput textInput--text" /></span></label>
+</div>
+<div class="oc-form__group oc-form--requiredHidden">
+<label class="oc-form__row    "><span class="oc-form__label-text ">
+Mot de passe&nbsp;
+<abbr class="oc-form__required js-form-required _password " title="requis"><span>*</span></abbr></span><span class="oc-form__widget formWidget "><input type="password" id="_password" name="_password" required="required" class=" textInput textInput--password" /></span></label>
+</div>
+<div class="oc-form__group">
+<label class="oc-form__row  oc-form__row--reversed  "><span class="oc-form__widget"><span class="ocCheckbox"><input type="checkbox" id="_remember_me" name="_remember_me" class="" value="1" checked="checked" /><span class="ocCheckbox__check"></span></span></span><span class="oc-form__label-text"><span class="oc-form__label-text ">
+Se souvenir de moi&nbsp;
+<abbr class="oc-form__required js-form-required _remember_me oc-form__required-hidden" title="requis"><span>*</span></abbr></span></span></label>
+</div>
+<div class="oc-form__group right-text">
+<a href="/fr/set-new-password">Mot de passe oublié</a>
+</div>
+<div class="oc-form__group  center-text">
+<div>
+<button type="submit" id="login" name="login" class="button button--primary t button"> Se connecter</button></div>
+</div>
+<div class="oc-form__group  center-text">
+<input type="hidden" id="_target_path" name="_target_path" class=" textInput textInput--hidden" value="https://openclassrooms.com/fr/courses/2301881-premier-pas-dans-lia-avec-locr" /><input type="hidden" id="_csrf_token" name="_csrf_token" class=" textInput textInput--hidden" value="cyEcDrxx-JDm_xjWYRpzY-z0tfavSEIJZ1dGVQFs-bA" />
+</div>
+</form>
+</li>
+</ul>
+<p class="text-center space-top">
+Pas encore membre ? <a href="/fr/register">Inscrivez-vous gratuitement</a> en 30s.
+</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<nav role="navigation" class="icoTabs  mainHeader__tabSet">
+<div class="mainHeader__mobileNav">
+<span class="icoTabs__tab  mainHeader__tabLogin">
+<a href="/fr/register" class="mainHeader__actionButton  button button--primary js-popin-activator" data-popin-selector="#popin-sign-in" role="button">
+S&#039;inscrire
+</a>
+<a href="/fr/login" class="mainHeader__actionButton  button button--secondary js-popin-activator" data-popin-selector="#popin-log-in" role="button">
+Se connecter
+</a>
+</span>
+<a class="js-courseSearch-mobileIcon js-tabs-tab  icoTabs__tab  mainHeader__tabSearch" href="#tab-search">
+<span class="accessibility-hidden">Rechercher</span>
+<i class="icon-magnifying-glass  icoTabs__icon  mainHeader__icon"></i>
+</a>
+<a class="js-tabs-tab  icoTabs__tab  mainHeader__tabCourseMenu  is-disabled" href="#tab-courseMenu">
+<span class="accessibility-hidden">Cours</span>
+<i class="icon-plus  icoTabs__icon  mainHeader__icon"></i>
+</a>
+<a class="js-tabs-tab  icoTabs__tab  is-disabled" href="#tab-courseEditMenu">
+<span class="accessibility-hidden">Créer un cours</span>
+<i class="icon-plus  icoTabs__icon  mainHeader__icon"></i>
+</a>
+<a class="js-tabs-tab  icoTabs__tab  is-disabled" data-tabs-default="true" href="#tab-searchMenu">
+<span class="accessibility-hidden">Rechercher</span>
+<i class="icon-magnifying-glass  icoTabs__icon  mainHeader__icon"></i>
+</a>
+<a class="js-tabs-tab  icoTabs__tab mainHeader__tabBurgerMenu" href="#tab-main">
+<span class="accessibility-hidden">Menu principal</span>
+<i class="icon-menu-burger  icoTabs__icon  mainHeader__icon"></i>
+</a>
+</div>
+</nav>
+</div>
+<div class="js-tabs-content  mainHeader__content mainHeader__tabSetSubmenu"></div>
+</div>
+</div>
+</div>
+</header>
+<div class="grid-wrapper">
+<div class="grid-inner">
+<div id="mainSearch" class="mainSearch"></div>
+</div>
+</div>
+<div id="mainContentWithHeader">
+<div id="pre-main-part">
+<section class="inset no-padding">
+<div class="grid-wrapper">
+<div class="grid-inner">
+<nav class="breadcrumb" role="navigation" aria-label="Fil d&#039;Ariane">
+<ul class="breadcrumb__trail">
+<li class="breadcrumb__item breadcrumb__item--home " itemscope itemtype="http://data-vocabulary.org/Breadcrumb">
+<a href="https://openclassrooms.com/fr/" itemprop="url">
+<span itemprop="title">Accueil</span>
+</a>
+</li>
+<li class="breadcrumb__item  " itemscope itemtype="http://data-vocabulary.org/Breadcrumb">
+<a href="https://openclassrooms.com/fr/courses" itemprop="url">
+<span itemprop="title">Cours</span>
+</a>
+</li>
+<li class="breadcrumb__item  breadcrumb__item--current" itemscope itemtype="http://data-vocabulary.org/Breadcrumb">
+Premier pas dans l&#039;IA avec l&#039;OCR
+</li>
+</ul>
+</nav>
+</div>
+</div>
+</section>
+</div>
+<main class="claire clearfix" role="main" id="mainContent">
+<article itemscope itemtype="http://schema.org/Article" lang="fr">
+<header id="course-header" class="course-header" xmlns="http://www.w3.org/1999/html">
+<div class="grid-wrapper"><div class="grid-inner"><div class="course-header__topPart"><div class="course-header__info"><a itemprop="url" href="/fr/courses/2301881-premier-pas-dans-lia-avec-locr"><h1 data-course-title="Premier pas dans l&#039;IA avec l&#039;OCR">Premier pas dans l&#039;IA avec l&#039;OCR</h1></a><span class="course-header__updatedTime visible-l">Mis à jour le 30/12/2014</span></div></div></div></div><div class="course-header__details-container"><div class="grid-wrapper"><div class="grid-inner"><div class="course-header__details  iconBar"><div class="course-header__detailsGroup  course-header__detailsGroup--formats iconBar__group"><ul data-option_popinselector="#popin-formats-availables" class="course-types iconBar__list js-course-formats-bar"><li class="iconBar__item  course-types__item  js-tooltip" title="Ce cours est visible gratuitement en ligne."><a href="/fr/courses/2301881-premier-pas-dans-lia-avec-locr" title="Ce cours est visible gratuitement en ligne."><i class="icon-desktop  course-types__icon"></i><span class="course-header__format-current"></span></a></li><li class="iconBar__item  course-types__item iconBar__item--dimmed js-tooltip" title="Ce cours n&#039;est pas encore en vidéo."><span><i class="icon-video course-types__icon"></i></span></li><li class="iconBar__item  course-types__item iconBar__item--dimmed js-tooltip" title="Ce cours n&#039;existe pas encore en livre ou ebook."><span><i class="icon-book  course-types__icon"></i></span></li><li class="iconBar__item  course-types__item iconBar__item--dimmed js-tooltip" title="Vous ne pouvez pas encore obtenir de certificat de réussite à l&#039;issue de ce cours."><a><i class="icon-badge  course-types__icon"></i></a></li><li class="iconBar__item  course-types__item iconBar__item--dimmed js-tooltip" title="Ce cours n&#039;est pas encore diplômant et ne vous permet pas d&#039;obtenir des crédits universitaires européens (ECTS)."><span><i class="icon-hat  course-types__icon"></i></span></li></ul></div><div class="course-header__detailsGroup  course-header__detailsGroup--info  iconBar__group"><ul class="iconBar__list"><li class="iconBar__item"><i class="icon-duration iconBar__icon js-tooltip" title="Ce cours demande en moyenne 2 heures de travail pour être réussi."></i><span class="iconBar__label">2 heures</span></li><li class="iconBar__item"><i class="icon-level iconBar__icon"></i><span class="iconBar__label">
+Moyenne
+</span></li></ul></div><div class="course-header__detailsGroup course-header__detailsGroup--licences iconBar__group"><a target="_blank" href="https://creativecommons.org/licenses/by-nc-sa/2.0"><span class="iconBar__label">Licence</span><ul class="iconBar__list"><li class="iconBar__item"><i class="icon-cc iconBar__icon" title="CC"></i></li><li class="iconBar__item"><i class="icon-ccby iconBar__icon" title="BY"></i></li><li class="iconBar__item"><i class="icon-ccnc iconBar__icon" title="NC"></i></li><li class="iconBar__item"><i class="icon-ccsa iconBar__icon" title="SA"></i></li></ul></a></div></div></div></div></div>
+<div id="popin-formats-availables" class="popin popin--course-formats-availables">
+<i class="popin__close-button icon-close js-close-button"></i>
+<div class="course-types course-types--withSpace">
+<a class="course-types__item" href="/fr/courses/2301881-premier-pas-dans-lia-avec-locr">
+<i class="icon-desktop course-types__icon"></i>
+</a>
+</div>
+<p>Ce cours est visible <a href="/fr/courses/2301881-premier-pas-dans-lia-avec-locr">gratuitement en ligne</a>.</p>
+<a class="button button--primary js-close-button" href="#">J&#039;ai tout compris !</a>
+</div>
+</header>
+<div class="grid-wrapper">
+<div class="grid-inner">
+<div class="contentWithSidebar  spacer  js-contentWithSidebar  grid-inner-content">
+<div class="contentWithSidebar__content">
+<div class="relative js-sidebar-container">
+<div class="static">
+<div class="tooltipMessage tooltipMessage--noArrow">
+<i class="tooltipMessage__icon  icon-lock"></i>
+<a href="/fr/login" class="js-popin-activator" data-popin-selector="#popin-log-in">Connectez-vous</a> ou <a href="/fr/register" class="js-popin-activator" data-popin-selector="#popin-sign-in">inscrivez-vous</a> gratuitement pour bénéficier de toutes les fonctionnalités de ce cours !
+</div>
+<h2 class="accessibility-hidden">Introduction du cours</h2>
+<div class="text-center  spacer-big">
+<div>
+<a href="/fr/login" class="button button--primary button--highlighting js-popin-activator" data-popin-selector="#popin-log-in">
+<i class="icon-lock"></i>
+Commencer le cours
+</a>
+</div>
+<a class="button button--alternative space-top" href="/fr/how-does-it-work">
+<span>Comment ça marche ?</span>
+</a>
+</div>
+<section>
+<div itemprop="articleBody" data-page-indentifier="/fr/courses/2301881-premier-pas-dans-lia-avec-locr" class="js-isRestrictablePage js-course-container js-smilize js-course-content">
+<div class="userContent userContent--smallCourse js-userContent">
+<h2 id="r-2301922" data-claire-element-id="3030032">Introduction</h2><p id="r-2301911" data-claire-element-id="2616971">Bonjour, bonsoir ; bienvenue ! Si vous avez cliqué sur le lien menant à ce cours, c'est que vous vous êtes un jour posé l'une des questions suivantes :</p><ul id="r-2301918" data-claire-element-id="3030013"><li id="r-2301913" data-claire-element-id="3030012"><p id="r-2301912" data-claire-element-id="3030011">qu'est-ce que l'intelligence artificielle (IA), terme très sci-fi ?</p></li><li id="r-2301915" data-claire-element-id="2616975"><p id="r-2301914" data-claire-element-id="2616974">qu'est-ce que l'OCR, ce terme très nerdy ?</p></li><li id="r-2301917" data-claire-element-id="2616977"><p id="r-2301916" data-claire-element-id="2616976">à quoi ça sert, et comment ça marche ?</p></li></ul><p id="r-2301920" data-claire-element-id="3030031">Je vais ici donc rapidement répondre à ces trois questions. Notez bien le mot &quot;rapidement&quot;. Ce terme s'impose puisque chacune des question plus haut est une porte qui ouvre sur un monde gigantesque, et bien plus complexe que ce que je vais vous présenter. Néanmoins, j'espère réellement pouvoir présenter ces domaines de façon claire et simple, d'une manière qui va vous donner envie de vous y intéresser et de pousser les recherches au-delà de cette simple introduction. Si je parviens à réaliser cet objectif, j'en serais très heureux.<img id="r-2301919" data-claire-element-id="2616979" src="/bundles/common/images/smiley/smile.png" alt="11" /></p><p id="r-2301921" data-claire-element-id="3030015">Quoi qu'il en soit, si vous suivez bien le tutoriel, vous finirez par avoir une première idée de comment fonctionne un des algorithmes utilisés par Word ou votre lecteur de PDF favori, par exemple, pour reconnaître les textes présents sur une image et, mieux encore, vous aurez un petit programme qui pourra reconnaître des caractères : un à la fois, certes, mais c'est déjà pas mal !</p><p id="r-2498876" data-claire-element-id="3030016">Ce programme sera écrit en C# et implémentera les idées présentées de la manière la plus simple possible, pour que vous puissiez le porter au langage de votre choix.</p><aside id="r-2498878" data-claire-element-id="3030018" data-claire-semantic="warning"><p id="r-2498877" data-claire-element-id="3030017">Comme nous allons ici coder en C#, il serait préférable de connaître quelques éléments du langage, comme les Forms et les concepts de base comme les classes.</p></aside><h2 id="r-2301933" data-claire-element-id="3030197">Qu'est-ce que l'IA ?</h2><h4 id="r-2302011" data-claire-element-id="3030194">Grosso modo...</h4><p id="r-2301923" data-claire-element-id="2616983">Dans ce tutoriel, nous allons nous intéresser au domaine de l'IA ; qu'est-ce que c'est ? Avant tout, il serait peut-être utile de savoir ce que ces lettres signifient.</p><p id="r-2301924" data-claire-element-id="3030033">Le sigle &quot;IA&quot; signie &quot;intelligence artificielle&quot;. C'est un domaine dont vous avez sans doute entendu parler, au travers de récits (comme les œuvres de science-fiction, ou des films), ou encore dans le monde du gaming. Les premiers vous ont sans doute présenté la discipline comme un monde de recherche où l'on cherchait à créer un esprit humain, ou du moins conscient et intelligent. Ce n'est pas totalement faux, mais pas complètement vrai non plus.</p><p id="r-2301925" data-claire-element-id="3030034">En effet, le but de l'intelligence artificielle est de donner naissance à des machines plus intelligentes (vous voyez la boucle ?...), dans le sens où elles pourront comprendre ce que nous faisons et pourront, de fait, répondre de façon plus directe et plus efficace à nos besoins. Par exemple, imaginez que vous soyez un médecin et que vous analysiez le scanner d'un patient. Vous doutez sur ce qu'il a et demandez de l'aide à un programme médical. Ce programme doit être entraîné (éduqué) à reconnaître les symptômes et à diagnostiquer les maladies correctement. C'est déjà une première étape, et beaucoup de chercheurs en IA planchent uniquement sur cette partie de la reconnaissance et de l'entraînement des machines. On pourrait simplement résumer cela par la question &quot;comment est-ce que je fais pour enseigner que ces pixels sont un chat à ce PC ?&quot;.</p><p id="r-2301926" data-claire-element-id="2616986">Une première étape. Maintenant, ne serait-il pas mieux pour tout le monde si ce logiciel médical pouvait directement converser avec le médecin pour lui présenter son avis concernant le patient ? Il pourrait parler avec une voix de synthèse et comprendre ce que le médecin lui dit à l'aide de la reconnaissance vocale. Encore une fois, c'est un problème de reconnaissance.</p><p id="r-2301927" data-claire-element-id="3030191">Vous l'aurez compris, l'IA tourne beaucoup autour de la reconnaissance d'objets, que ce soit des objets &quot;standards&quot; (au sens, communs), ou moins fréquents, tels que l'angle d'une route (qui fait tourner une voiture) ou une série de gestes  permettant d'accéder à votre base secrète. Dans le jargon, ces objets s'appellent des motifs (de l'anglais <em>pattern</em>).</p><p id="r-2301928" data-claire-element-id="3030192">Au cours du temps, les chercheurs se sont fabriqué un petit arsenal d'outils permettant de faire cette reconnaissance, de façon de plus en plus efficace (et impressionnante, regardez une IA dans un jeu, ou alors les logiciels de diagnostic médicaux, qui sont à la pointe de la technologie dans le domaine).</p><p id="r-2301929" data-claire-element-id="3030193">C'est une science assez libre, puisqu'elle se soucie uniquement d'atteindre ses objectifs. Elle se base souvent sur d'autres sciences pour se développer. Par exemple, elle s'est basée sur la biologie du cerveau humain pour concevoir ce qu'on appelle des réseaux de neurones artificiels. Ces réseaux ont pour but de reconnaître des motifs connus à l'avance, et de pouvoir en apprendre de nouveaux, à l'aide d'un entraînement (ou sans, pour certains modèles). Évidemment, l'IA ne reprend pas tout dans les plus stricts détails, mais elle reprend quelques éléments importants pour atteindre l'objectif. On pourrait dire qu'elle est pragmatique, de ce point de vue là.</p><h4 id="r-2302016" data-claire-element-id="3030196">L'intelligence artificielle au quotidien, cachée, mais bien présente.</h4><p id="r-2301930" data-claire-element-id="2616990">Tout cela peut vous paraître plutôt loin, après toute cette lecture. Vous pourriez vous demander :</p><div id="r-2301932" data-claire-element-id="2616992" data-claire-semantic="question"><p id="r-2301931" data-claire-element-id="2616991">Tout ça est bien beau, mais qu'est-ce que l'IA fait pour <em>moi</em>, est-ce que je peux au moins la voir dans <em>ma</em> vie de tous les jours !?</p></div><p id="r-2302014" data-claire-element-id="3030020">La réponse à cette dernière question est évidemment un grand oui.<img id="r-2302012" data-claire-element-id="2617134" src="/bundles/common/images/smiley/smile.png" alt="11" /></p><p id="r-2317731" data-claire-element-id="3030195">Vous pouvez voir l'IA en action partout autour de vous, si vous regardez bien. Par exemple : Google utilise des techniques d'IA pour faire ses recherches ; Facebook fait de même pour grouper ses utilisateurs entre eux ; les caméras de surveillance peuvent reconnaître des situations à problèmes (ou, du moins, anormales) automatiquement et donner l'alerte ; les robots (comme le gentil petit Nao) utilise plusieurs techniques d'IA de pointe (dont les réseaux neuronaux, cités au-dessus) pour, par exemple, reconnaître à qui il parle, ou comment répondre. Un autre exemple, moins high-tech cette fois, est celui de votre lave-vaisselle (ou lave-linge). Votre machine doit &quot;penser&quot; pour doser les produits nettoyants et l'eau, elle doit aussi &quot;penser&quot; au niveau de saleté qu'elle reçoit lors du calcul pour le dosage du produit. Par exemple, si les assiettes sont plutôt propres, elle n'utilisera pas beaucoup de produit, tandis que si c'est noir-charbon, alors elle ne va pas hésiter une seconde à vider la réserve ! (Sachez, entre nous, qu'un être humain ne résisterait pas à l'envie non plus).</p><p id="r-2302015" data-claire-element-id="2617137">Ah ! C'était une grosse introduction, n'est-ce pas ? Passons maintenant à ce qui nous intéresse vraiment pour ce tutoriel : l'OCR.</p><h2 id="r-2303108" data-claire-element-id="3043087">L'OCR</h2><h3 id="r-2302954" data-claire-element-id="3030199">Qu'est-ce que c'est ?</h3><p id="r-2302951" data-claire-element-id="2619174">On va d'abord s'intéresser à ce qu'est l'OCR, avant de penser à comment implémenter notre propre module.</p><p id="r-2302952" data-claire-element-id="3030198">Le terme &quot;OCR&quot; est un acronyme pour &quot;Optical Character Recognition&quot;, ou Reconnaissance de caractère optique, en français. L'OCR est donc un domaine de l'IA qui a pour but de reconnaître un caractère (lettre, chiffre, symbole alphabétique) lorsqu'on lui en présente un. Évidemment, vous pourriez être en train de vous dire que c'est ce qu'un ordinateur fait automatiquement. Après tout, quand j'appuie sur la touche A, je vois un A apparaître. S'il le fait dans un sens, il le fait automatiquement dans l'autre, right ?</p><p id="r-2302953" data-claire-element-id="2619176">Eh bien, non. Reconnaître un caractère depuis une image est le but de l'OCR. En pratique, reconnaître un seul caractère ne va pas nous mener bien loin, et les logiciels professionnels sont bien entendu capables de reconnaître plusieurs lettres mises à côté. C'est par exemple le cas de OneNote, qui peut extraire le texte dans une image lorsqu'on le lui demande. Cependant, reconnaître plusieurs lettres est simplement extraire des pixels donnés d'une image qui pourraient être des lettres et les passer, un  à un, au module d'OCR pour faire la reconnaissance, pour ensuite mettre les lettres les unes à la suite des autres et reformer la phrase vue. Reconnaître plusieurs lettres est en fait plus un travail de traitement d'image que de reconnaissance, puisqu'on ne reconnait qu'une lettre à la fois. C'est sur cette dernière étape que l'on va se pencher ici.</p><h3 id="r-2303093" data-claire-element-id="3043086">Ce que nous allons faire</h3><p id="r-2302955" data-claire-element-id="3030200">Dans ce tutoriel, nous allons construire notre propre module de reconnaissance. Il ne va pas pouvoir reconnaître qu'une lettre à la fois, cependant, comme nous l'avons vu plus haut.</p><p id="r-2302956" data-claire-element-id="3030201">Avant toute chose, réfléchissons à comment nous pourrions faire cela. On peut étudier ce qu'il se passe réellement sur le marché professionnel pour nous donner des idées.</p><p id="r-2302957" data-claire-element-id="2619180">Une rapide recherche nous permet de trouver que la plupart des solutions de reconnaissance professionnelles sont basées sur les réseaux de neurones artificiels, dont on a parlé plus haut. Ces réseaux sont capables d'apprendre d'exemples et peuvent reconnaître même des formes qu'ils n'avaient jamais vu auparavant, tant que la chose n'est pas totalement nouvelle. C'est cette flexibilité qui est attirante chez eux. Cependant, en conçevoir un est une tâche plutôt difficile, et il nous faudrait de quoi l'entraîner (des centaines d'images de chiffres et de lettres écrites à la main ou par un ordinateur pour les montrer au réseau de neurones), ce qui peut être chose difficile à trouver. On va donc oublier les réseaux de neurones ; trop compliqué.</p><p id="r-2302958" data-claire-element-id="2619181">Un autre algorithme, et bien plus simple, puisque c'est le plus simple de tous existe cependant. Cet algorithme est celui de la distance Euclidienne. Commençons par expliquer ce qu'est cette distance avant de voir l'algorithme en lui-même.</p><h4 id="r-2303029" data-claire-element-id="3043085">La distance euclidienne</h4><p id="r-2302959" data-claire-element-id="3030202">En géométrie, un point a des coordonnées spatiales représentées par un vecteur position. La distance euclidienne est simplement la différence entre deux vecteurs, c'est-à-dire la distance qu'il existe entre deux points. Par exemple, la distance entre ma maison et mon lycée est d'environ 650 mètres.</p><p id="r-2302960" data-claire-element-id="2619183">Si vous ne savez pas ce qu'est un vecteur, n'ayez pas peur, c'est un concept très simple. Un vecteur peut être représenté comme un tableau de flottants (j'imagine que tout programmeur qui se respecte sait ce qu'est un flottant...), c'est-à-dire de nombres décimaux. Ces nombres représentent la position d'un point sur les différentes directions de l'espace (les trois fameux axes x, y, z en 3D).</p><p id="r-2302961" data-claire-element-id="2619184">En maths, on représente un vecteur comme ceci :</p><p id="r-2498976" data-claire-element-id="3043081"><math>$$$$$\[\vec a \begin{pmatrix} x\\y\\z \end{pmatrix}\]$$$$$</math></p><p id="r-2302963" data-claire-element-id="3030203">Évidemment, un vecteur étant un tableau de décimaux, il n'est pas limité à 3 composantes, il peut en avoir autant qu'il en faut pour répondre au problème en main.</p><div id="r-2498969" data-claire-element-id="3043083"><p id="r-2498966" data-claire-element-id="3030271">La propriété des vecteurs qui nous intéresse ici est qu'on peut soustraire des vecteurs entre eux. Pour cela, il suffit juste de soustraire les composantes des vecteurs une à une pour obtenir un nouveau vecteur. On écrit cette opération sous forme d'équation, comme ceci :</p><p id="r-2499046" data-claire-element-id="3043082"><math>$$$$$\[\vec a-\vec b=\begin{pmatrix}a_x-b_x\\a_y-b_y\\a_z-b_z\end{pmatrix}\]$$$$$</math></p></div><p id="r-2317717" data-claire-element-id="3030534">Encore une fois, le vecteur n'a pas besoin d'être de dimension (=longueur) 3 pour que ça marche, même si, pour l'exemple, c'est ce que l'équation précédente montre. La soustraction tient pour n'importe quelle dimension du vecteur, on soustrait juste la première composante de l'un avec la première composante de l'autre, et ainsi de suite, après tout. Voici maintenant la formule de la distance euclidienne pour des vecteurs de dimension quelconque :</p><p id="r-2499056" data-claire-element-id="3043084"><math>$$$$$\[d(a,b)=d(b,a)=\sqrt{\sum_{i=1}^d{(a_i-b_i)^2}}\]$$$$$</math></p><p id="r-2499057" data-claire-element-id="3030536">Si vous le savez pas, le grand signe en forme de E s'appelle &quot;sigma&quot;, et, en mathématiques, il signifie simplement &quot;prendre la somme sur un intervalle&quot;. L'intervalle est, dans notre cas, désigné par la lettre &quot;i&quot;, qui va prendre toutes les valeurs de 1 à d, le nombre de dimensions du vecteur (le nombre de composantes qu'il a). Si vous n'avez pas bien compris l'opération, la voici sous forme de code :</p><pre id="r-2317720" data-claire-element-id="2652217"><code data-claire-semantic="csharp">float total = 0f;   //en maths, on calcule sur des réels
+                    //donc, autant prendre des nombres réels dans le code
+for (int i = start; i &lt;= end; i++)
+    total += i;</code></pre><p id="r-2303026" data-claire-element-id="3030461">La formule précédente dit juste que la distance entre les points A et B est la même que l'on parte de A vers B ou de B vers A (c'est logique, la distance entre moi et mon lycée est de 650m que je m'y rende ou que j'en rentre), d'où l'équation d(a,b) = d(b, a), et que cette distance équivaut à la somme de la différence, au carré, entre chaque composante des vecteurs représentant les points A et B. Finalement, il y a une racine carrée, parce que jusque là, il y avait des carrés que l'on ajoutait entre eux. Pour trouver la vraie valeur de distance, on prend la racine carré.</p><p id="r-2303028" data-claire-element-id="3030481">La formule ci-dessus est directement (ou presque) donnée par le théorème de Pythagore, donc remerciez ce gentil monsieur !<img id="r-2303027" data-claire-element-id="2619342" src="/bundles/common/images/smiley/heureux.png" alt="12" /></p><h4 id="r-2303045" data-claire-element-id="3030475">Qu'est-ce qu'on fait maintenant qu'on a la distance euclidienne ?</h4><p id="r-2303041" data-claire-element-id="2619363">Maintenant qu'on sait comment la calculer, on va voir comment l'utiliser pour reconnaître un chiffre, évidemment !</p><p id="r-2303042" data-claire-element-id="3030473">Imaginez qu'on dispose d'une grille de pixels d'une taille, disons de 7x5, donc 7 pixels sur l'horizontale et 5 en verticale. On peut dessiner sur cette grille, mais uniquement en noir et blanc. Donc, à tout moment, un pixel peut ou être noir, ou être blanc, mais pas entre les deux, ni d'être d'une autre couleur. Disons qu'un pixel blanc vaut 0 et qu'un pixel noir vaut 1. On peut alors représenter chaque pixel comme étant une composante d'un vecteur, qui représentera la grille entière. Comme la grille a une taille de 7x5, il y aura 35 pixels, et donc 35 composantes dans le vecteur.</p><aside id="r-2303044" data-claire-element-id="2619392" data-claire-semantic="information"><p id="r-2303043" data-claire-element-id="2619391">Une façon plus classe de dire cette dernière phrase est de dire que notre vecteur représente un point dans un espace en 35D, c'est-à-dire à 35 dimensions. :soleil:<br />Suivant cette logique (et la phrase ci-dessous), un chiffre est en réalité représenté par un point en 35D.</p></aside><aside id="r-2499051" data-claire-element-id="3030474" data-claire-semantic="information"><p id="r-2303061" data-claire-element-id="2619393">On a donc un vecteur représentant une grille (image), elle-même représentant un chiffre : on a donc un vecteur représentant un chiffre.</p></aside><p id="r-2303062" data-claire-element-id="2619394">Notre algorithme pour la reconnaissance d'un chiffre, à l'aide de la distance euclidienne est donc tout donné.</p><h4 id="r-2303092" data-claire-element-id="2619442">Notre algorithme de reconnaissance</h4><p id="r-2303063" data-claire-element-id="2619396">Vous l'avez peut-être déjà deviné, et le voici :</p><ol id="r-2303072" data-claire-element-id="2619405"><li id="r-2303065" data-claire-element-id="2619398"><p id="r-2303064" data-claire-element-id="2619397">Préparer des images de référence (que l'on va tenter de reconnaître).<br />Cette étape revient à construire les vecteurs de ces images.</p></li><li id="r-2303067" data-claire-element-id="2619400"><p id="r-2303066" data-claire-element-id="2619399">Obtenir l'image dessinée par l'utilisateur (ce que l'utilisateur a écrit). Cela revient encore à obtenir le vecteur de son image.</p></li><li id="r-2303069" data-claire-element-id="2619402"><p id="r-2303068" data-claire-element-id="2619401">Comparer ce vecteur à tous les vecteurs dans notre base de référence, c'est-à-dire prendre sa distance euclidienne à tous les autres vecteurs.</p></li><li id="r-2303071" data-claire-element-id="2619404"><p id="r-2303070" data-claire-element-id="2619403">Le vecteur avec la distance la plus petite au vecteur de l'utilisateur est le chiffre que l'on a reconnu.</p></li></ol><p id="r-2303091" data-claire-element-id="2619441">Cet algorithme est le plus simple pour faire de l'OCR, mais il a l'avantage d'être rapide à implémenter et à comprendre. Les résultats finaux ne sont cependant pas les meilleurs dans le monde de l'IA, c'est sûr et certain...</p><h3 id="r-2303107" data-claire-element-id="3030509">Implémentation</h3><p id="r-2303094" data-claire-element-id="3030477">Nous allons maintenant l'implémenter pour avoir notre propre module de reconnaissance. Je vais utiliser le C# pour le code, mais j'ai fait attention à écrire les classes de façon claire pour pouvoir rendre l'écriture dans votre langage favori la plus simple possible.</p><p id="r-2303095" data-claire-element-id="2619445">Voyons de quoi nous avons besoin :</p><ul id="r-2303104" data-claire-element-id="2619454"><li id="r-2303097" data-claire-element-id="2619447"><p id="r-2303096" data-claire-element-id="2619446">une classe pour représenter un vecteur</p></li><li id="r-2303099" data-claire-element-id="2619449"><p id="r-2303098" data-claire-element-id="2619448">une classe pour représenter une image (grille de pixels)</p></li><li id="r-2303101" data-claire-element-id="2619451"><p id="r-2303100" data-claire-element-id="2619450">une classe pour faire la reconnaissance</p></li><li id="r-2303103" data-claire-element-id="2619453"><p id="r-2303102" data-claire-element-id="2619452">une classe pour obtenir l'entrée et présenter les résultats à l'utilisateur</p></li></ul><p id="r-2303105" data-claire-element-id="2619455">Ces quatre points sont le strict minimum, mais j'ai rajouté de quoi permettre de rajouter de nouveaux caractères à reconnaître, et de quoi charger et enregistrer les images de référence, pour ne pas avoir à les re-rentrer dans le programme à chaque fois.</p><p id="r-2303106" data-claire-element-id="2619456">Je vais vous présenter chacune des classes, dans l'ordre de leur utilisation. Je ne vais pas commenter, puisque le code l'est déjà, cela dit.</p><h5 id="r-2303197" data-claire-element-id="3030502">MainForm (classe principale du programme)</h5><pre id="r-2303196" data-claire-element-id="3030501"><code data-claire-semantic="csharp">using System;
+using System.IO;
+using System.Drawing;
+using System.Windows.Forms;
+using System.Collections.Generic;
+
+namespace edocr
+{
+    //Représente la fenêtre du programme
+    public partial class MainForm : Form
+    {
+        //L'entrée utilisateur
+        ImageGrid inputGrid;
+        //Les images de référence, avec leur nom
+        Dictionary&lt;string, ImageGrid&gt; knowledge;
+
+        //Si le bouton de la souris est appuyé
+        bool mouseDown;
+        //bmp et g sont pour le rendu
+        Bitmap bmp;
+        Graphics g;
+
+        public MainForm()
+        {
+            //Crée la fenêtre
+            InitializeComponent();
+
+            //Initialise les éléments de rendu
+            this.bmp = new Bitmap(Ozone.Width, Ozone.Height);
+            this.g = Graphics.FromImage(this.bmp);
+
+            //Crée une nouvelle grille vide pour l'entrée utilisateur
+            CreateInputGrid();
+            //Crée une liste d'images de référence vide
+            this.knowledge = new Dictionary&lt;string, ImageGrid&gt;();
+
+            //Définition des événements utiles
+            Ozone.MouseUp += Ozone_MouseUp;
+            Ozone.MouseDown += Ozone_MouseDown;
+            Ozone.MouseMove += Ozone_MouseMove;
+
+            bt_Clear.Click += bt_Clear_Click;
+            bt_Recognize.Click += bt_Recognize_Click;
+            bt_LearnCharacter.Click += bt_LearnCharacter_Click;
+
+            bt_SaveData.Click += bt_SaveData_Click;
+            bt_LoadData.Click += bt_LoadData_Click;
+
+            lbx_LearnedItems.SelectedIndexChanged += lbx_LearnedItems_SelectedIndexChanged;
+        }
+
+        //Enregistre les images de référence dans un fichier texte
+        private void bt_SaveData_Click(object sender, EventArgs e)
+        {
+            SaveFileDialog sfd = new SaveFileDialog();
+            sfd.FileName = string.Empty;
+            sfd.Title = &quot;Save data to...&quot;;
+            sfd.Filter = &quot;Text data|*.txt&quot;;
+            sfd.InitialDirectory = Environment.SpecialFolder.MyDocuments.ToString();
+
+            if (sfd.ShowDialog() == DialogResult.OK)
+            {
+                string data = string.Empty;
+
+                foreach (string itemName in knowledge.Keys)
+                    data += knowledge [itemName].ToString() + Environment.NewLine;
+                File.WriteAllText(sfd.FileName, data);
+            }
+        }
+
+        //Charge une liste d'images de référence depuis un fichier texte formaté correctement
+        private void bt_LoadData_Click(object sender, EventArgs e)
+        {
+            lbx_LearnedItems.Items.Clear();
+
+            string file = GetDataFile();
+            if (file == string.Empty)
+                return;
+
+            knowledge = new KnowledgeLoader().Load(file);
+
+            foreach (string item in knowledge.Keys)
+                lbx_LearnedItems.Items.Add(item);
+        }
+
+        //Utilisée pour le chargement. Retourne le chemin vers un
+        //fichier sélectionné par l'utilisateur.
+        private string GetDataFile()
+        {
+            OpenFileDialog ofd = new OpenFileDialog();
+            ofd.FileName = string.Empty;
+            ofd.InitialDirectory = Environment.SpecialFolder.MyDocuments.ToString();
+            ofd.Filter = &quot;Text data|*.txt&quot;;
+
+            if (ofd.ShowDialog() == DialogResult.OK)
+                return ofd.FileName;
+            return string.Empty;
+        }
+
+        //Fait la reconnaissance de caractère
+        private void bt_Recognize_Click(object sender, EventArgs e)
+        {
+            //Le nom du caractère reconnu, acquis à l'aide de l'algorithme de
+            //la distance euclidienne
+            string recognizedChara = DistanceMetric.EuclideanRecognition(inputGrid, knowledge);
+
+            //Affichage du caractère reconnu (&quot;R&quot;) et des distances vers les
+            //autres images de références
+            tb_Distances.Text = &quot;R=&quot; + recognizedChara + Environment.NewLine;
+            foreach (var distance in DistanceMetric.Distances)
+                tb_Distances.Text += distance + Environment.NewLine;
+        }
+
+        //Apprend un nouveau caractère. Tout ce que cette méthode fait
+        //est de donner un nom entrée par l'utilisateur à l'image dessinée
+        //par l'utilisateur et l'ajouter à la liste d'images de référence.
+        private void bt_LearnCharacter_Click(object sender, EventArgs e)
+        {
+            if (tb_CharacterName.Text.Length == 0)
+            {
+                MessageBox.Show(&quot;Entrez un nom pour ce caractère !&quot;, &quot;Euclidean distance OCR&quot;,
+                    MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                return;
+            }
+
+            string charaName = tb_CharacterName.Text;
+            ImageGrid charaGrid = inputGrid;
+
+            knowledge.Add(charaName, charaGrid);
+
+            lbx_LearnedItems.Items.Add(charaName);
+
+            CreateInputGrid();
+        }
+
+        //Afficher la zone d'affichage et la grille utilisateur
+        private void bt_Clear_Click(object sender, EventArgs e)
+        {
+            inputGrid.Clear();
+            Render(inputGrid);
+        }
+
+        private void lbx_LearnedItems_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            int index = lbx_LearnedItems.SelectedIndex;
+            ImageGrid chara = knowledge [lbx_LearnedItems.Items [index] as string];
+
+            Render(chara);
+        }
+
+        //La souris a été pressée
+        private void Ozone_MouseDown(object sender, MouseEventArgs e)
+        {
+            mouseDown = true;
+        }
+
+        //La souris se déplace. Si elle est pressée, remplir les pixels correspondant.
+        private void Ozone_MouseMove(object sender, MouseEventArgs e)
+        {
+            if (mouseDown)
+            {
+                inputGrid.IntersectMouse(e.Location);
+                Render(inputGrid);
+            }
+        }
+
+        //La pression sur la souris a été relâchée
+        private void Ozone_MouseUp(object sender, MouseEventArgs e)
+        {
+            mouseDown = false;
+        }
+
+        //Crée une grille vide pour l'entrée utilisateur
+        private void CreateInputGrid()
+        {
+            inputGrid = new ImageGrid(7, 5, Ozone.Size);
+        }
+
+        //Afficher une grille
+        private void Render(ImageGrid grid)
+        {
+            g.Clear(Color.White);
+
+            grid.Render(g);
+
+            Ozone.Image = bmp;
+            Ozone.Refresh();
+        }
+    }
+}</code></pre><h4 id="r-2303199" data-claire-element-id="3030504">DistanceMetric (l'algorithme de reconnaissance)</h4><pre id="r-2303198" data-claire-element-id="3030503"><code data-claire-semantic="csharp">using System;
+using System.Collections.Generic;
+
+namespace edocr
+{
+    //L'algorithme de reconnaissance en lui-même.
+    public static class DistanceMetric
+    {
+        //Une liste des distances et des éléments auxquels elles appartiennent.
+        //Utilisée pour l'affichage.
+        static List&lt;string&gt; distances = new List&lt;string&gt;();
+
+        public static List&lt;string&gt; Distances { get { return distances; } }
+
+        //Fait la reconnaissance à proprement parler depuis l'entrée
+        //utilisateur et les images de référence.
+        public static string EuclideanRecognition(ImageGrid input, 
+            Dictionary&lt;string, ImageGrid&gt; knowledge)
+        {
+            distances.Clear();
+            //Le nom du caractère le plus proche jusqu'à présent
+            string closestGridName = string.Empty;
+            //La distance du caractère le plus proche jusqu'à présent
+            //A l'origine, la distance est infinie puisqu'on ne compare avec rien.
+            float closestDistance = float.PositiveInfinity;
+
+            //Le vecteur représentant l'image utilisateur
+            VectorN inputVector = input.GetVector();
+
+            //Pour chaque image de référence...
+            foreach (string itemName in knowledge.Keys)
+            {
+                //... obtenir le vecteur représentant l'image de référence
+                VectorN itemVector = knowledge [itemName].GetVector();
+                //... calculer la distance entre l'entrée utilisateur et
+                //    l'image de référence
+                float distance = EuclideanDistance(inputVector, itemVector);
+
+                //... si cette distance est la plus petite jusqu'à présent, le noter
+                if (distance &lt; closestDistance)
+                {
+                    closestDistance = distance;
+                    closestGridName = itemName;
+                }
+
+                distances.Add(itemName + &quot;:&quot; + distance);
+            }
+
+            //Retourner le nom du caractère reconnu
+            return closestGridName;
+        }
+
+        //Calcule la distance entre deux vecteurs.
+        //C'est l'implémentation directe de la formule d(a,b) = sqrt(sum( (Ai - Bi)² ))
+        //Lance une exception si les vecteurs sont de tailles différentes.
+        private static float EuclideanDistance(VectorN a, VectorN b)
+        {
+            if (a.Dimension != b.Dimension)
+                throw new ArgumentException(&quot;Vectors must be of the same size.&quot;);
+
+            float sum = 0f;
+            for (int i = 0; i &lt; a.Dimension; i++)
+                sum += (a [i] - b [i]) * (a [i] - b [i]);
+
+            return (float)Math.Sqrt(sum);
+        }
+    }
+}</code></pre><h4 id="r-2303201" data-claire-element-id="3030506">ImageGrid (l'image)</h4><pre id="r-2303200" data-claire-element-id="3030505"><code data-claire-semantic="csharp">using System;
+using System.Drawing;
+using System.Collections.Generic;
+
+namespace edocr
+{
+    //Représente une grille de pixels, aka. une image en noir et blanc,
+    //sans niveaux de gris.
+    public class ImageGrid
+    {
+        //Dimensions de l'image
+        int width, height;
+        //Dimensions d'un pixel, utilisées pour l'affichage des pixels
+        int itemWidth, itemHeight;
+
+        //La grille de pixels en elle-même
+        GridItem[,] grid;
+
+        //Initialise une grille vide en connaissant ses dimensions
+        //et les dimensions de la taille de dessin (utilisée pour déterminer
+        //les dimensions des pixels)
+        public ImageGrid(int width, int height, Size ozoneSize)
+        {
+            this.width = width;
+            this.height = height;
+            this.itemWidth = ozoneSize.Width / width;
+            this.itemHeight = ozoneSize.Height / height;
+
+            CreateGrid();
+        }
+
+        //Initialise une grille vide connaissant ses dimensions et celles
+        //des pixels
+        public ImageGrid(int width, int height, int itemWidth, int itemHeight)
+        {
+            this.width = width;
+            this.height = height;
+            this.itemWidth = itemWidth;
+            this.itemHeight = itemHeight;
+
+            CreateGrid();
+        }
+
+        //Donne une représentation littérale de l'image.
+        //(Utilisée pour l'enregistrement de la grille)
+        public override string ToString()
+        {
+            return &quot;w=&quot; + width + &quot;;h=&quot; + height + &quot;;iw=&quot; + itemWidth + &quot;;ih=&quot; + itemHeight
+                + &quot;;v=[&quot; + GetVector().ToString();
+        }
+
+        //Vérifie si la souris est sur un quelconque pixel, et, si c'est le
+        //cas, alors ce pixel est allumé (devient noir).
+        public void IntersectMouse(Point mousePos)
+        {
+            Rectangle mouse = new Rectangle(mousePos.X, mousePos.Y, 1, 1);
+            int x = mousePos.X / itemWidth;
+            int y = mousePos.Y / itemHeight;
+
+            if (grid [y, x].Intersects(mouse))
+                grid [y, x].Fill();
+            else
+                grid [y, x].Empty();
+        }
+
+        //Donne la représentation vectorielle de la grille.
+        //Donne le vecteur représentant l'image et utilisé pour
+        //la reconnaissance avec la distance euclidienne.
+        public VectorN GetVector()
+        {
+            VectorN vector = new VectorN();
+
+            for (int x = 0; x &lt; width; x++)
+                for (int y = 0; y &lt; height; y++)
+                    //on construit le vecteur en mettant 1 ou 0 à la composante
+                    //courante selon que le pixel soit blanc ou noir (Filled == true ou Filled == false)
+                    vector.Add(grid [y, x].Filled ? 1f : 0f);
+
+            return vector;
+        }
+
+        //Initialise une image depuis la connaissance de ses dimensions et
+        //de celles des pixels, et du vecteur représentant l'image.
+        public static ImageGrid FromVector(int width, int height, int itemWidth, int itemHeight,
+            VectorN vector)
+        {
+            ImageGrid grid = new ImageGrid(width, height, itemWidth, itemHeight);
+
+            for (int x = 0; x &lt; width; x++)
+                for (int y = 0; y &lt; height; y++)
+                {
+                    //comme l'image est en 2D (tableau 2D) mais que le vecteur est un
+                    //tableau 1D, on doit faire la correspondance entre les positions dans
+                    //la grille 2D et le tableau 1D à l'aide de la formule
+                    // i = x * hauteur + y où i l'index 1D et x et y la position sur la grille
+                    if (vector [x * height + y] == 1f)
+                        //évidemment, si le vecteur contenait un 1 à cet emplacement
+                        //c'est que le pixel était noir, donc on le met en noir (Filled = true)
+                        grid.grid [y, x].Fill();
+                }
+
+            return grid;
+        }
+
+        //Affiche la grille à l'écran.
+        public void Render(Graphics g)
+        {
+            for (int x = 0; x &lt; width; x++)
+                for (int y = 0; y &lt; height; y++)
+                {
+                    if (grid [y, x].Filled)
+                        g.FillRectangle(Brushes.Black, grid [y, x].Hitbox);
+                }
+        }
+
+        //Efface la grille : met tous les pixels en position vide (blanc).
+        public void Clear()
+        {
+            for (int x = 0; x &lt; width; x++)
+                for (int y = 0; y &lt; height; y++)
+                    grid [y, x].Empty();
+        }
+
+        //Crée une nouvelle grille de pixels, vide.
+        private void CreateGrid()
+        {
+            grid = new GridItem[height, width];
+
+            for (int x = 0; x &lt; width; x++)
+                for (int y = 0; y &lt; height; y++)
+                    grid [y, x] = new GridItem(x * itemWidth, y * itemHeight, itemWidth, itemHeight);
+        }
+    }
+}</code></pre><h4 id="r-2303203" data-claire-element-id="3030508">KnowledgeLoader (chargeur d'images de référence)</h4><pre id="r-2303202" data-claire-element-id="3030507"><code data-claire-semantic="csharp">using System;
+using System.IO;
+using System.Collections.Generic;
+
+namespace edocr
+{
+    //Cette classe charge les images de référence depuis un fichier.
+    //Elle prend un fichier contenant une suite de nombres (les vecteurs représentant les grilles)
+    //et fabrique les grilles depuis ces vecteurs à l'aide de la classe ImageGrid.
+    //La classe sert à charger des grilles (images) que l'on avait déjà créées,
+    //pour ne pas avoir à les récréer.
+    public class KnowledgeLoader
+    {
+        const int WIDTH = 0;
+        const int HEIGHT = 1;
+        const int ITEM_WIDTH = 2;
+        const int ITEM_HEIGHT = 3;
+        const int VECTOR = 4;
+
+        public Dictionary&lt;string, ImageGrid&gt; Load(string file)
+        {
+            using (StreamReader fr = new StreamReader(File.OpenRead(file)))
+            {
+                int i = 0;
+                string line = string.Empty;
+                Dictionary&lt;string, ImageGrid&gt; knowledge = new Dictionary&lt;string, ImageGrid&gt;();
+
+                while ((line = fr.ReadLine()) != null)
+                    knowledge.Add((i++).ToString(), GetImageGrid(line));
+
+                return knowledge;
+            }
+        }
+
+        private ImageGrid GetImageGrid(string line)
+        {
+            string[] tokens = line.Split(new[]{ &quot;w=&quot;, &quot;;h=&quot;, &quot;;iw=&quot;, &quot;;ih=&quot;, &quot;;v=[&quot; }, 
+                StringSplitOptions.RemoveEmptyEntries);
+            int width = int.Parse(tokens [WIDTH]);
+            int height = int.Parse(tokens [HEIGHT]);
+            int itemWidth = int.Parse(tokens [ITEM_WIDTH]);
+            int itemHeight = int.Parse(tokens [ITEM_HEIGHT]);
+
+            string[] vectorComs = tokens [VECTOR].Split(',');
+            VectorN vector = new VectorN();
+
+            foreach (string com in vectorComs)
+                vector.Add(float.Parse(com));
+
+            return ImageGrid.FromVector(width, height, itemWidth, itemHeight, vector);
+        }
+    }
+}</code></pre><h4 id="r-2303205" data-claire-element-id="2619665">GridItem (un pixel)</h4><pre id="r-2303204" data-claire-element-id="2619664"><code data-claire-semantic="csharp">using System;
+using System.Drawing;
+
+namespace edocr
+{
+    //Représente un pixel de l'image
+    public class GridItem
+    {
+        //Le pixel peut être ou plein ou vide (noir ou blanc),
+        //mais pas les deux, et il n'y a pas de niveaux d'intensité
+        //entre les deux.
+        bool filled;
+
+        //Le rectangle représentant le pixel sur l'écran (zone de dessin).
+        //Utilisé pour savoir quand la souris est sur le pixel,
+        //et pour savoir où dessiner le pixel et comment le dessiner.
+        Rectangle hitbox;
+
+        public bool Filled { get { return filled;}}
+        public Rectangle Hitbox { get { return hitbox; } }
+
+        public GridItem(int x, int y, int w, int h)
+        {
+            this.filled = false;
+            this.hitbox = new Rectangle(x, y, w, h);
+        }
+
+        public GridItem(Rectangle hitbox)
+        {
+            this.filled = false;
+            this.hitbox = hitbox;
+        }
+
+        //Détermine si le pixel croise un objet rectangulaire.
+        //Utilisée pour savoir si la souris (rapportée à un rectangle de 1x1)
+        //est sur le pixel ou pas.
+        public bool Intersects(Rectangle o)
+        {
+            return hitbox.IntersectsWith(o);
+        }
+
+        //Remplit le pixel (il devient noir).
+        public void Fill()
+        {
+            filled = true;
+        }
+
+        //Vide le pixel (il devient blanc).
+        public void Empty()
+        {
+            filled = false;
+        }
+    }
+}</code></pre><h4 id="r-2303207" data-claire-element-id="2619667">VectorN (un vecteur)</h4><pre id="r-2303206" data-claire-element-id="2619666"><code data-claire-semantic="csharp">using System;
+using System.Collections.Generic;
+
+namespace edocr
+{
+    //Représente un vecteur de dimension N
+    public class VectorN
+    {
+        //La liste des composantes du vecteur.
+        List&lt;float&gt; components;
+
+        //La dimension du vecteur, c'est-à-dire sa taille,
+        //ou, autrement dit, le nombre de composantes qu'il a.
+        public int Dimension { get { return components.Count; } }
+
+        //Un indexeur permettant d'avoir accès aux composantes
+        //directement en utilisant la syntaxe a[i] et non pas
+        //a.components[i]
+        public float this[int index]
+        {
+            get { return components [index]; }
+        }
+
+        //Constructeur vide, ne fait que créer une liste de float vide.
+        public VectorN()
+        {
+            this.components = new List&lt;float&gt;();
+        }
+
+        //Constructeur initialisant les composantes selon une liste déjà donnée.
+        //(Utilisé lors d'un chargement de donnée par le programme.)
+        public VectorN(List&lt;float&gt; components)
+        {
+            this.components = components;
+        }
+
+        //Retourne une forme 'string' du vecteur.
+        //(Utilisée pour sauvegarder le vecteur.)
+        public override string ToString()
+        {
+            string str = components [0].ToString();
+            for (int i = 1; i &lt; components.Count; i++)
+                str += &quot;,&quot; + components [i];
+            return str;
+        }
+
+        //Ajoute une composante au vecteur.
+        //Ce design n'est sans doute pas le meilleur pour un vecteur,
+        //puisque, mathématicalement parlant, ils ont une taille fixe,
+        //mais du point de vue du programmeur, c'est le moyen le plus
+        //facile de faire les choses, le plus comfortable.
+        public void Add(float component)
+        {
+            this.components.Add(component);
+        }
+    }
+}</code></pre><h4 id="r-2303210" data-claire-element-id="2619689">MainForm.design.cs (le design de la fenêtre du programme)</h4><pre id="r-2303208" data-claire-element-id="2619668"><code data-claire-semantic="csharp">// ------------------------------------------------------------------------------
+//  &lt;autogenerated&gt;
+//      This code was generated by a tool.
+//      Mono Runtime Version: 2.0.50727.1433
+// 
+//      Changes to this file may cause incorrect behavior and will be lost if 
+//      the code is regenerated.
+//  &lt;/autogenerated&gt;
+// ------------------------------------------------------------------------------
+
+namespace edocr
+{
+    
+    #region Windows Form Designer generated code
+    public partial class MainForm
+    {
+        private void InitializeComponent()
+        {
+            this.lbx_LearnedItems = new System.Windows.Forms.ListBox();
+            this.bt_Recognize = new System.Windows.Forms.Button();
+            this.bt_Clear = new System.Windows.Forms.Button();
+            this.bt_LearnCharacter = new System.Windows.Forms.Button();
+            this.Ozone = new System.Windows.Forms.PictureBox();
+            this.tb_CharacterName = new System.Windows.Forms.TextBox();
+            this.bt_SaveData = new System.Windows.Forms.Button();
+            this.bt_LoadData = new System.Windows.Forms.Button();
+            this.tb_Distances = new System.Windows.Forms.TextBox();
+            // 
+            // lbx_LearnedItems
+            // 
+            this.lbx_LearnedItems.Name = &quot;lbx_LearnedItems&quot;;
+            this.lbx_LearnedItems.Location = new System.Drawing.Point(24, 224);
+            this.lbx_LearnedItems.Size = new System.Drawing.Size(144, 130);
+            this.lbx_LearnedItems.BackColor = System.Drawing.SystemColors.Window;
+            this.lbx_LearnedItems.TabIndex = 1;
+            this.lbx_LearnedItems.ItemHeight = 14;
+            // 
+            // bt_Recognize
+            // 
+            this.bt_Recognize.Name = &quot;bt_Recognize&quot;;
+            this.bt_Recognize.Location = new System.Drawing.Point(256, 184);
+            this.bt_Recognize.TabIndex = 2;
+            this.bt_Recognize.ImeMode = System.Windows.Forms.ImeMode.Disable;
+            this.bt_Recognize.Text = &quot;Recognize&quot;;
+            this.bt_Recognize.UseVisualStyleBackColor = true;
+            // 
+            // bt_Clear
+            // 
+            this.bt_Clear.Name = &quot;bt_Clear&quot;;
+            this.bt_Clear.Location = new System.Drawing.Point(352, 184);
+            this.bt_Clear.TabIndex = 3;
+            this.bt_Clear.ImeMode = System.Windows.Forms.ImeMode.Disable;
+            this.bt_Clear.Text = &quot;Clear&quot;;
+            this.bt_Clear.UseVisualStyleBackColor = true;
+            // 
+            // bt_LearnCharacter
+            // 
+            this.bt_LearnCharacter.Name = &quot;bt_LearnCharacter&quot;;
+            this.bt_LearnCharacter.Location = new System.Drawing.Point(160, 184);
+            this.bt_LearnCharacter.TabIndex = 4;
+            this.bt_LearnCharacter.ImeMode = System.Windows.Forms.ImeMode.Disable;
+            this.bt_LearnCharacter.Text = &quot;Learn&quot;;
+            this.bt_LearnCharacter.UseVisualStyleBackColor = true;
+            // 
+            // Ozone
+            // 
+            this.Ozone.Name = &quot;Ozone&quot;;
+            this.Ozone.Location = new System.Drawing.Point(32, 24);
+            this.Ozone.Image = null;
+            this.Ozone.TabIndex = 5;
+            this.Ozone.Size = new System.Drawing.Size(400, 150);
+            this.Ozone.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.Ozone.Text = &quot;pictureBox1&quot;;
+            // 
+            // tb_CharacterName
+            // 
+            this.tb_CharacterName.Name = &quot;tb_CharacterName&quot;;
+            this.tb_CharacterName.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.tb_CharacterName.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.tb_CharacterName.Location = new System.Drawing.Point(176, 320);
+            this.tb_CharacterName.TabIndex = 6;
+            this.tb_CharacterName.Size = new System.Drawing.Size(100, 24);
+            this.tb_CharacterName.BackColor = System.Drawing.SystemColors.Window;
+            this.tb_CharacterName.Text = &quot;Char. learn&quot;;
+            // 
+            // bt_SaveData
+            // 
+            this.bt_SaveData.Name = &quot;bt_SaveData&quot;;
+            this.bt_SaveData.Location = new System.Drawing.Point(192, 248);
+            this.bt_SaveData.TabIndex = 7;
+            this.bt_SaveData.ImeMode = System.Windows.Forms.ImeMode.Disable;
+            this.bt_SaveData.Text = &quot;Save data&quot;;
+            this.bt_SaveData.UseVisualStyleBackColor = true;
+            // 
+            // bt_LoadData
+            // 
+            this.bt_LoadData.Name = &quot;bt_LoadData&quot;;
+            this.bt_LoadData.Location = new System.Drawing.Point(192, 280);
+            this.bt_LoadData.TabIndex = 8;
+            this.bt_LoadData.ImeMode = System.Windows.Forms.ImeMode.Disable;
+            this.bt_LoadData.Text = &quot;Load data&quot;;
+            this.bt_LoadData.UseVisualStyleBackColor = true;
+            // 
+            // tb_Distances
+            // 
+            this.tb_Distances.Name = &quot;tb_Distances&quot;;
+            this.tb_Distances.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.tb_Distances.ScrollBars = System.Windows.Forms.ScrollBars.Both;
+            this.tb_Distances.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.tb_Distances.Location = new System.Drawing.Point(288, 232);
+            this.tb_Distances.TabIndex = 9;
+            this.tb_Distances.Size = new System.Drawing.Size(152, 112);
+            this.tb_Distances.ReadOnly = true;
+            this.tb_Distances.Multiline = true;
+            this.tb_Distances.Text = &quot;Distances&quot;;
+            // 
+            // MainForm
+            // 
+            this.Name = &quot;MainForm&quot;;
+            this.ClientSize = new System.Drawing.Size(452, 379);
+            this.Location = new System.Drawing.Point(26, 18);
+            this.Controls.Add(this.lbx_LearnedItems);
+            this.Controls.Add(this.bt_Recognize);
+            this.Controls.Add(this.bt_Clear);
+            this.Controls.Add(this.bt_LearnCharacter);
+            this.Controls.Add(this.Ozone);
+            this.Controls.Add(this.tb_CharacterName);
+            this.Controls.Add(this.bt_SaveData);
+            this.Controls.Add(this.bt_LoadData);
+            this.Controls.Add(this.tb_Distances);
+            this.Text = &quot;Euclidean distance OCR&quot;;
+        }
+        private System.Windows.Forms.ListBox lbx_LearnedItems;
+        private System.Windows.Forms.Button bt_Recognize;
+        private System.Windows.Forms.Button bt_Clear;
+        private System.Windows.Forms.Button bt_LearnCharacter;
+        private System.Windows.Forms.PictureBox Ozone;
+        private System.Windows.Forms.TextBox tb_CharacterName;
+        private System.Windows.Forms.Button bt_SaveData;
+        private System.Windows.Forms.Button bt_LoadData;
+        private System.Windows.Forms.TextBox tb_Distances;
+    }
+    #endregion
+}</code></pre><p id="r-2303209" data-claire-element-id="2619686">Voilà, vous avez désormais un programme pouvant reconnaître un chiffre que vous dessinez, bravo !</p><p id="r-2303211" data-claire-element-id="2619687">Certes, l'algorithme est très simple, et il n'est pas optimal, mais il marche la plupart du temps, ce qui est déjà pas mal. Vous en verrez cependant bien vite les limites.</p><p id="r-2303212" data-claire-element-id="2619688">J'espère que vous avez apprécié la lecture de ce tutoriel, sur ce ! :)</p>
+</div>
+<div class="js-courseSelementActions sideActions">
+<ul class="sideActions__container">
+<li>
+<a class="sideActions__item  js-courseElementActions-copyUrl  js-tooltip" href="#" data-tooltip="Copier le lien" data-tooltip-done="Lien copié !">
+#
+</a>
+</li>
+</ul>
+</div>
+</div>
+</section>
+<div tabindex="-1" role="dialog" aria-hidden="true" aria-labelledby="popin-view-restriction_popin_title" class="popin popin--illustrated  js-popin" id="popin-view-restriction">
+<button class="popin__close-button  js-close-button" title="Fermer" aria-label="Fermer">
+<i class="icon-close" aria-hidden="true"></i>
+</button>
+<div class="popin__inner">
+<div class="popin__illustrationWrapper">
+<div class="popin__illustration illustration--balloon"></div>
+</div>
+<div class="popin__mainContainer">
+<h3 id="popin-view-restriction_popin_title" class="popin__title  js-popin-title">Waouh !</h3>
+<div class="popin__content  js-popin-content">
+<div class="popin__contentWrapper">
+<p>
+Très heureux de voir que nos cours vous plaisent, déjà 5 pages lues aujourd&#039;hui ! Vous pouvez continuer la lecture de nos cours en devenant un membre de la communauté d&#039;OpenClassrooms. C&#039;est gratuit !
+</p>
+<p>
+Vous pourrez aussi suivre votre avancement dans le cours, faire les exercices et discuter avec les autres membres.
+</p>
+</div>
+</div>
+<div class="popin__actions  js-popin-actions">
+<span class="u--inlineBlock">
+<a class="button button--primary " href="/fr/register">S'inscrire</a>
+</span>
+<span class="u--inlineBlock">
+<a class="button button--secondary " href="/fr/login">Se connecter</a>
+</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="space-top">
+</div>
+</div>
+<div id="popin-not-certifying-yet_203301" class="popin" data-popin-title="Vous ne pouvez pas encore obtenir de certificat de réussite à l&#039;issue de ce cours.
+                            <a href='/fr/premium'><i class='icon-star'></i> Devenez Premium</a>
+                    ">
+<img alt="Exemple de certificat de réussite" src="//static.oc-static.com/prod/images/courses/certif.jpg" />
+</div>
+<div id="popin-not-certifying-yet_957504" class="popin" data-popin-title="Vous ne pouvez pas encore obtenir de certificat de réussite à l&#039;issue de ce cours.
+                            <a href='/fr/premium'><i class='icon-star'></i> Devenez Premium</a>
+                    ">
+<img alt="Exemple de certificat de réussite" src="//static.oc-static.com/prod/images/courses/certif.jpg" />
+</div>
+</div>
+<aside id="content-with-sidebar" class="contentWithSidebar__sidebar  js-contentWithSidebar-slidingElement">
+<nav>
+<div id="tab-courseMenu" class="col-nav__inner js-sidebar-inner">
+<div class="col-nav__block col-nav__block--premium">
+<strong class="not-certifying col-nav__notCertifying">Vous ne pouvez pas encore obtenir de certificat de réussite à l&#039;issue de ce cours.</strong>
+</div>
+<div class="col-nav__block col-nav__block--institution">
+<h2>Créé par</h2>
+<a href="/fr/partners/openclassrooms" target="_blank">
+<span data-image-cdn-attr-src="https://sdz-upload.s3.amazonaws.com/prod/partners/img/logo_logo-oc.png" data-image-cdn-attr-alt="logo OpenClassrooms" data-image-cdn-width="165" data-image-cdn-attr-class="col-nav__institutionLogo"></span>
+<p class="col-nav__block--institutionDescription">
+OpenClassrooms, Leading <span class='nowrap'>E-Learning<span> Platform in Europe
+</p>
+</a>
+</div>
+<div class="socialNetwork col-nav__block">
+<ul class="socialButtons  js-socialButtons" data-options="
+                title: 'Premier pas dans l&#039;IA avec l&#039;OCR @OCFrance',
+        mailTitle: 'Cours &quot;Premier pas dans l&#039;IA avec l&#039;OCR&quot; sur OpenClassrooms',
+        mailContent: 'Découvrez le cours &quot;Premier pas dans l&#039;IA avec l&#039;OCR&quot; sur OpenClassrooms.'">
+<li>
+<a class="roundIcon  roundIcon--twitter addthis_button_twitter  js-socialButtons-btn" data-tooltip="Partagez sur Twitter">
+<i class="roundIcon__icon  icon-twitter"></i>
+</a>
+</li>
+<li>
+<a class="roundIcon  roundIcon--facebook  addthis_button_facebook  js-socialButtons-btn" data-tooltip="Partagez sur Facebook">
+<i class="roundIcon__icon  icon-facebook"></i>
+</a>
+</li>
+<li>
+<a class="roundIcon  roundIcon--googlePlus  addthis_button_google_plusone_share  js-socialButtons-btn" data-tooltip="Partagez sur Google+">
+<i class="roundIcon__icon  icon-google"></i>
+</a>
+</li>
+<li>
+<a class="roundIcon  addthis_button_email  js-socialButtons-btn  js-socialButtons-email" data-tooltip="Partagez par e-mail">
+<i class="roundIcon__icon  icon-letter"></i>
+</a>
+</li>
+</ul>
+</div>
+</div>
+</nav>
+</aside>
+</div>
+</div>
+</div>
+<footer id="course-footer" class="alt-section noMarginBottom">
+<div class="grid-wrapper">
+<div class="grid-inner">
+<div class="grid-inner-content  courseFooter">
+<div class="courseFooter__authorsOnly course-bottom__category">
+<h2 class="highlighted">
+Le professeur
+</h2>
+<div>
+<a itemprop="author" itemscope itemtype="http://schema.org/Person" href="/fr/membres/chiheb2012-10139" class="no-underlined">
+<div class="course-bottom__text-illustrated">
+<span data-author="Chiheb Daaloul" data-image-cdn-background-image="https://www.gravatar.com/avatar/ac14e40bad83bdf65dbc813b0e81e1c2/?s=256&amp;r=g&amp;d=https%3A%2F%2Fopenclassrooms.com%2Fbundles%2Fcommon%2Fimages%2Favatar_defaut.png" data-image-cdn-width="120"></span>
+<h4 itemprop="name">Chiheb Daaloul</h4>
+<p itemprop="description">
+Merci.
+</p>
+</div>
+</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</footer>
+</article>
+</main>
+</div>
+<div id="footerWrapper">
+<footer id="footer" class="oc-footer">
+<hr style="margin-bottom: 8px" />
+<div class="grid-wrapper">
+<div class="grid-inner">
+<div class="oc-footer__item">
+<div class="oc-footer__itemTitle"><span class="skeleton" style="height: 20px; width: 80%"></span></div>
+<ul class="oc-footer__linksList">
+<li class="oc-footer__linksListItem">
+<p><a tabindex="inherit"><span class="skeleton" style="height: 14px; width: 70%"></span></a></p>
+</li>
+<li class="oc-footer__linksListItem">
+<p><a tabindex="inherit"><span class="skeleton" style="height: 14px; width: 60%"></span></a></p>
+</li>
+<li class="oc-footer__linksListItem">
+<p><a tabindex="inherit"><span class="skeleton" style="height: 14px; width: 65%"></span></a></p>
+</li>
+<li class="oc-footer__linksListItem">
+<p><a tabindex="inherit"><span class="skeleton" style="height: 14px; width: 40%"></span></a></p>
+</li>
+</ul>
+</div>
+<div class="oc-footer__item">
+<div class="oc-footer__itemTitle"><span class="skeleton" style="height: 20px; width: 85%"></span></div>
+<ul class="oc-footer__linksList">
+<li class="oc-footer__linksListItem">
+<p><a tabindex="inherit"><span class="skeleton" style="height: 14px; width: 40%"></span></a></p>
+</li>
+<li class="oc-footer__linksListItem">
+<p><a tabindex="inherit"><span class="skeleton" style="height: 14px; width: 60%"></span></a></p>
+</li>
+</ul>
+</div>
+<div class="oc-footer__item">
+<div class="oc-footer__itemTitle"><span class="skeleton" style="height: 20px; width: 75%"></span></div>
+<ul class="oc-footer__linksList">
+<li class="oc-footer__linksListItem">
+<p><a tabindex="inherit"><span class="skeleton" style="height: 14px; width: 65%"></span></a></p>
+</li>
+<li class="oc-footer__linksListItem">
+<p><a tabindex="inherit"><span class="skeleton" style="height: 14px; width: 40%"></span></a></p>
+</li>
+<li class="oc-footer__linksListItem">
+<p><a tabindex="inherit"><span class="skeleton" style="height: 14px; width: 50%"></span></a></p>
+</li>
+<li class="oc-footer__linksListItem">
+<p><a tabindex="inherit"><span class="skeleton" style="height: 14px; width: 40%"></span></a></p>
+</li>
+</ul>
+</div>
+<div class="oc-footer__item">
+<span class="skeleton" style="height: 25px; width: 65%"></span>
+<div class="oc-footer__socialButtonWrapper">
+<div><span class="skeleton skeleton--round" style="width: 40px; height: 40px"></span></div>
+<div><span class="skeleton skeleton--round" style="width: 40px; height: 40px;"></span></div>
+<div><span class="skeleton skeleton--round" style="width: 40px; height: 40px;"></span></div>
+<div><span class="skeleton skeleton--round" style="width: 40px; height: 40px;"></span></div>
+<div><span class="skeleton skeleton--round" style="width: 40px; height: 40px;"></span></div>
+</div>
+<div><span class="skeleton skeleton--width50" style="height: 40px;"></span></div>
+</div>
+</div>
+</div>
+</footer>
+</div>
+<div id="showDisclaimer" class="cookiesDisclaimer"></div>
+<script type="text/javascript">
+    window.analytics=window.analytics||[],window.analytics.methods=["identify","group","track","page","pageview","alias","ready","on","once","off","trackLink","trackForm","trackClick","trackSubmit"],window.analytics.factory=function(t){return function(){var a=Array.prototype.slice.call(arguments);return a.unshift(t),window.analytics.push(a),window.analytics}};for(var i=0;i<window.analytics.methods.length;i++){var key=window.analytics.methods[i];window.analytics[key]=window.analytics.factory(key)}window.analytics.load=function(t){if(!document.getElementById("analytics-js")){var a=document.createElement("script");a.type="text/javascript",a.id="analytics-js",a.async=!0,a.src=("https:"===document.location.protocol?"https://":"http://")+"cdn.segment.io/analytics.js/v1/"+t+"/analytics.min.js";var n=document.getElementsByTagName("script")[0];n.parentNode.insertBefore(a,n)}},window.analytics.SNIPPET_VERSION="2.0.9",
+    window.analytics.load('mou95e6tdn');
+</script>
+<script>App.scripts.push("https://cdn.polyfill.io/v2/polyfill.min.js?features=default,es6,IntersectionObserver,Object.values,Array.prototype.includes,Array.prototype.findIndex,Promise.prototype.finally,Intl.~locale.fr");</script>
+<script>App.scripts.push("/js/oc/packages/vendors.a8c9dbf4999d14200102.js");</script>
+<script>App.scripts.push("/js/oc/packages/common.b4e82b3481735be3a034.js");</script>
+
+<script>App.scripts.push("/js/oc/packages/courseView.352585d761cb1ba5884f.js");</script>
+
+<script>
+    (function () {
+        function loadScripts(cb) {
+            App.scripts.forEach(function (src, index) {
+                var script = document.createElement('script');
+                script.src = src;
+                script.async = false;
+                document.body.appendChild(script);
+
+                if (cb && index === App.scripts.length - 1) {
+                    script.onload = cb;
+                }
+            });
+        }
+
+        function boot() {
+            loadScripts(function () {
+                if (App.modules) {
+                    App.modules.startAll();
+                }
+            });
+        }
+
+        if (window.addEventListener) {
+            window.addEventListener('load', boot, false);
+        } else if (window.attachEvent) {
+            window.attachEvent('onload', boot);
+        } else {
+            window.onload = boot;
+        }
+    }());
+</script>
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"90dc06697a","applicationID":"20302107","transactionName":"NANaYkJXC0ICAhdYVw1Je0NDQgpcTA4AblsPB1FEVWkGXhYTEFRnAAlNRENTOlIMFBFCXTwQUVNH","queueTime":0,"applicationTime":224,"atts":"GERZFApNGEw=","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
+</html>
