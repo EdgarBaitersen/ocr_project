@@ -1,6 +1,5 @@
-Mettez ici les documentations qui peuvent aider sur l'OCR !
+Doc sur l'ocr !
 
 
-
-
- 
+<i> liens </i>
+https://openclassrooms.com/fr/courses/2301881-premier-pas-dans-lia-avec-locr
