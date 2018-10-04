@@ -8,8 +8,9 @@ Mettez ici les liens de docs sur l'OCR.
   <li>Un OCR d'un ancien spe: https://github.com/tomMoulard/OCR_spe</li>
   <li>OpenCV
     <ul>
-      <li>https://www.quora.com/Is-there-any-OpenCV-for-C</li>
-      <li>https://stackoverflow.com/questions/14676018/install-opencv-and-compile-c-program-using-gcc</li>
+      <li>(https://www.quora.com/Is-there-any-OpenCV-for-C)</li>
+      <li>(https://stackoverflow.com/questions/14676018/install-opencv-and-compile-c-program-using-gcc)</li>
+      <li>https://blog.zhajor.com/2016/10/install-opencv-and-make-a-test-project-with-clion/</li>
     </ul>
   </li>
 </ul>
