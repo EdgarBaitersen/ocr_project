@@ -11,6 +11,7 @@ Mettez ici les liens de docs sur l'OCR.
       <li>(https://www.quora.com/Is-there-any-OpenCV-for-C)</li>
       <li>(https://stackoverflow.com/questions/14676018/install-opencv-and-compile-c-program-using-gcc)</li>
       <li>https://blog.zhajor.com/2016/10/install-opencv-and-make-a-test-project-with-clion/</li>
+      <li>https://www.tutorialspoint.com/opencv/opencv_adaptive_threshold.htm Binarisation de l'image en C avec adaptive treshold</li>
     </ul>
   </li>
 </ul>
