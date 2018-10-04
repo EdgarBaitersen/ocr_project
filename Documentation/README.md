@@ -1,5 +1,6 @@
-Doc sur l'ocr !
+<h1>Doc sur l'OCR !</h1>
 
 
-<i> liens </i>
+<u>Liens :</u>
+<br/>
 https://openclassrooms.com/fr/courses/2301881-premier-pas-dans-lia-avec-locr
